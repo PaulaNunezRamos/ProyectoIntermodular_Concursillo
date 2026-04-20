@@ -55,7 +55,7 @@
     "categoria": "Geografia"
   },
   {
-    "pregunta": "Que animal dice miau?",
+    "pregunta": "Que animal dice 'miau'?",
     "opcionA": "Perro",
     "opcionB": "Gato",
     "opcionC": "Vaca",
@@ -108,5 +108,225 @@
     "nivel": 1,
     "pista": "Es el deporte mas popular",
     "categoria": "Deportes"
+  },
+  {
+    "pregunta": "Quien escribio Don Quijote?",
+    "opcionA": "Lorca",
+    "opcionB": "Cervantes",
+    "opcionC": "Quevedo",
+    "opcionD": "Garcia Marquez",
+    "correcta": "B",
+    "nivel": 2,
+    "pista": "Autor espanol del Siglo de Oro",
+    "categoria": "Literatura"
+  },
+  {
+    "pregunta": "Cual es el rio mas largo del mundo?",
+    "opcionA": "Amazonas",
+    "opcionB": "Nilo",
+    "opcionC": "Danubio",
+    "opcionD": "Misisipi",
+    "correcta": "B",
+    "nivel": 2,
+    "pista": "Esta en Africa",
+    "categoria": "Geografia"
+  },
+  {
+    "pregunta": "En que ano llego el hombre a la Luna?",
+    "opcionA": "1965",
+    "opcionB": "1969",
+    "opcionC": "1972",
+    "opcionD": "1959",
+    "correcta": "B",
+    "nivel": 2,
+    "pista": "Decada de los 60",
+    "categoria": "Historia"
+  },
+  {
+    "pregunta": "Que lenguaje se usa para crear paginas web?",
+    "opcionA": "Java",
+    "opcionB": "HTML",
+    "opcionC": "Python",
+    "opcionD": "C++",
+    "correcta": "B",
+    "nivel": 2,
+    "pista": "No es lenguaje de programacion",
+    "categoria": "Informatica"
+  },
+  {
+    "pregunta": "Cuantos continentes hay?",
+    "opcionA": "5",
+    "opcionB": "6",
+    "opcionC": "7",
+    "opcionD": "8",
+    "correcta": "C",
+    "nivel": 2,
+    "pista": "Incluye America",
+    "categoria": "Geografia"
+  },
+  {
+    "pregunta": "Que elemento quimico tiene simbolo O?",
+    "opcionA": "Oro",
+    "opcionB": "Oxigeno",
+    "opcionC": "Osmio",
+    "opcionD": "Oxido",
+    "correcta": "B",
+    "nivel": 2,
+    "pista": "Lo respiramos",
+    "categoria": "Quimica"
+  },
+  {
+    "pregunta": "Quien pinto la Mona Lisa?",
+    "opcionA": "Van Gogh",
+    "opcionB": "Picasso",
+    "opcionC": "Da Vinci",
+    "opcionD": "Rembrandt",
+    "correcta": "C",
+    "nivel": 2,
+    "pista": "Genio del Renacimiento",
+    "categoria": "Arte"
+  },
+  {
+    "pregunta": "Cual es el pais mas poblado?",
+    "opcionA": "India",
+    "opcionB": "China",
+    "opcionC": "EEUU",
+    "opcionD": "Brasil",
+    "correcta": "B",
+    "nivel": 2,
+    "pista": "Esta en Asia",
+    "categoria": "Geografia"
+  },
+  {
+    "pregunta": "Que instrumento mide la temperatura?",
+    "opcionA": "Barometro",
+    "opcionB": "Termometro",
+    "opcionC": "Higrometro",
+    "opcionD": "Altimetro",
+    "correcta": "B",
+    "nivel": 2,
+    "pista": "Se usa cuando tienes fiebre",
+    "categoria": "Ciencia"
+  },
+  {
+    "pregunta": "Cuantos jugadores tiene un equipo de futbol?",
+    "opcionA": "9",
+    "opcionB": "10",
+    "opcionC": "11",
+    "opcionD": "12",
+    "correcta": "C",
+    "nivel": 2,
+    "pista": "Incluye portero",
+    "categoria": "Deportes"
+  },
+  {
+    "pregunta": "Cual es la formula quimica del agua?",
+    "opcionA": "CO2",
+    "opcionB": "H2O",
+    "opcionC": "O2",
+    "opcionD": "NaCl",
+    "correcta": "B",
+    "nivel": 3,
+    "pista": "Dos hidrogenos",
+    "categoria": "Quimica"
+  },
+  {
+    "pregunta": "Quien formulo la teoria de la relatividad?",
+    "opcionA": "Newton",
+    "opcionB": "Einstein",
+    "opcionC": "Tesla",
+    "opcionD": "Galileo",
+    "correcta": "B",
+    "nivel": 3,
+    "pista": "E = mc2",
+    "categoria": "Ciencia"
+  },
+  {
+    "pregunta": "Que pais gano el mundial 2010?",
+    "opcionA": "Brasil",
+    "opcionB": "Alemania",
+    "opcionC": "Espana",
+    "opcionD": "Argentina",
+    "correcta": "C",
+    "nivel": 3,
+    "pista": "Gol de Iniesta",
+    "categoria": "Deportes"
+  },
+  {
+    "pregunta": "Que lenguaje usa Android principalmente?",
+    "opcionA": "Swift",
+    "opcionB": "Java",
+    "opcionC": "PHP",
+    "opcionD": "Ruby",
+    "correcta": "B",
+    "nivel": 3,
+    "pista": "Lo usas en clase",
+    "categoria": "Informatica"
+  },
+  {
+    "pregunta": "Cual es la montana mas alta del mundo?",
+    "opcionA": "K2",
+    "opcionB": "Everest",
+    "opcionC": "Aneto",
+    "opcionD": "Aconcagua",
+    "correcta": "B",
+    "nivel": 3,
+    "pista": "Esta en el Himalaya",
+    "categoria": "Geografia"
+  },
+  {
+    "pregunta": "En que pais se encuentra el Taj Mahal?",
+    "opcionA": "China",
+    "opcionB": "India",
+    "opcionC": "Japon",
+    "opcionD": "Turquia",
+    "correcta": "B",
+    "nivel": 3,
+    "pista": "Pais asiatico",
+    "categoria": "Historia"
+  },
+  {
+    "pregunta": "Que cientifico descubrio la penicilina?",
+    "opcionA": "Pasteur",
+    "opcionB": "Fleming",
+    "opcionC": "Darwin",
+    "opcionD": "Curie",
+    "correcta": "B",
+    "nivel": 3,
+    "pista": "Su apellido empieza por F",
+    "categoria": "Ciencia"
+  },
+  {
+    "pregunta": "Cual es el lenguaje de programacion de paginas dinamicas en servidor?",
+    "opcionA": "HTML",
+    "opcionB": "CSS",
+    "opcionC": "PHP",
+    "opcionD": "XML",
+    "correcta": "C",
+    "nivel": 3,
+    "pista": "Empieza por P",
+    "categoria": "Informatica"
+  },
+  {
+    "pregunta": "Que pais tiene forma de bota?",
+    "opcionA": "Espana",
+    "opcionB": "Italia",
+    "opcionC": "Francia",
+    "opcionD": "Grecia",
+    "correcta": "B",
+    "nivel": 3,
+    "pista": "Esta en Europa",
+    "categoria": "Geografia"
+  },
+  {
+    "pregunta": "Quien fue el primer presidente de EEUU?",
+    "opcionA": "Lincoln",
+    "opcionB": "Washington",
+    "opcionC": "Jefferson",
+    "opcionD": "Roosevelt",
+    "correcta": "B",
+    "nivel": 3,
+    "pista": "Apellido de una ciudad",
+    "categoria": "Historia"
   }
 ]
