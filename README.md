@@ -29,10 +29,10 @@ Durante el juego, la interfaz mostrará visualmente los comodines disponibles:
 
 El proyecto está construido utilizando las siguientes tecnologías (puedes hacer clic en ellas para más información):
 
-*   **[Java](https://www.java.com/es/):** Lenguaje de programación principal utilizado para la lógica de la aplicación y la interfaz gráfica.
-*   **[MongoDB](https://www.mongodb.com/es):** Sistema de base de datos NoSQL orientado a documentos, utilizado por su flexibilidad y rapidez para almacenar las preguntas y el ranking de jugadores.
-*   **[Git](https://git-scm.com/) y [GitHub](https://github.com/):** Control de versiones para el trabajo colaborativo en equipo y alojamiento del repositorio.
-*   **[Eclipse IDE](https://www.eclipse.org/ide/) / [Visual Studio Code](https://code.visualstudio.com/):** Entornos de desarrollo integrados para la escritura y depuración del código.
+*   **[![Java](https://img.shields.io/badge/Java-ED8B00?style=flat&logo=openjdk&logoColor=white)](https://www.java.com/es/):** Lenguaje de programación principal utilizado para la lógica de la aplicación y la interfaz gráfica.
+*   **[![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b?style=flat&logo=mongodb&logoColor=white)](https://www.mongodb.com/es):** Sistema de base de datos NoSQL orientado a documentos, utilizado por su flexibilidad y rapidez para almacenar las preguntas y el ranking de jugadores.
+*   **[![Git](https://img.shields.io/badge/Git-%23F05033?style=flat&logo=git&logoColor=white)](https://git-scm.com/) y [![GitHub](https://img.shields.io/badge/GitHub-%23121011?style=flat&logo=github&logoColor=white)](https://github.com/):** Control de versiones para el trabajo colaborativo en equipo y alojamiento del repositorio.
+*   **[![Eclipse IDE](https://img.shields.io/badge/Eclipse%20IDE-FE7A16?style=flat&logo=eclipse&logoColor=white)](https://www.eclipse.org/ide/) / [![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7?style=flat&logo=visualstudiocode&logoColor=white&v=1)](https://code.visualstudio.com/):** Entornos de desarrollo integrados para la escritura y depuración del código.
 
 ---
 
