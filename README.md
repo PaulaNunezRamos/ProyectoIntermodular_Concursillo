@@ -2,7 +2,7 @@
 
 Este proyecto es una aplicación desarrollada en Java que simula un juego de preguntas y respuestas inspirado en el famoso formato televisivo *"¿Quién quiere ser millonario?"*, pero adaptado y personalizado al estilo del streamer **IlloJuan**.
 
-El desarrollo forma parte de un **Proyecto Académico** para poner en práctica los conocimientos adquiridos en las asignaturas de Programación, Base de DatosEntornos de Desarrollo en la EFA Moratalaz.
+El desarrollo forma parte de un **Proyecto Académico** para poner en práctica los conocimientos adquiridos en las asignaturas de Programación, Base de Datos y Entornos de Desarrollo en la EFA Moratalaz.
 
 ---
 
