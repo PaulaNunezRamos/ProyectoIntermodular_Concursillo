@@ -76,4 +76,43 @@ public class GestorPreguntas {
 
         return elegida;
     }
+    
+    public Pregunta obtenerPreguntaAleatoriaPorNivelYCategoria(int nivelBuscado, String categoriaBuscada) {
+
+        MongoDatabase baseDatos = ConexionMongo.conectar();
+        MongoCollection<Document> coleccion = baseDatos.getCollection("preguntas");
+
+        Document filtro = new Document("nivel", nivelBuscado)
+                .append("categoria", categoriaBuscada);
+
+        ArrayList<Pregunta> disponibles = new ArrayList<Pregunta>();
+
+        for (Document doc : coleccion.find(filtro)) {
+            Pregunta p = new Pregunta();
+
+            p.setPregunta(doc.getString("pregunta"));
+            p.setOpcionA(doc.getString("opcionA"));
+            p.setOpcionB(doc.getString("opcionB"));
+            p.setOpcionC(doc.getString("opcionC"));
+            p.setOpcionD(doc.getString("opcionD"));
+            p.setCorrecta(doc.getString("correcta"));
+            p.setNivel(doc.getInteger("nivel"));
+            p.setPista(doc.getString("pista"));
+            p.setCategoria(doc.getString("categoria"));
+
+            if (!usadas.contains(p)) {
+                disponibles.add(p);
+            }
+        }
+
+        if (disponibles.isEmpty()) {
+            return null;
+        }
+
+        int indice = (int) (Math.random() * disponibles.size());
+        Pregunta elegida = disponibles.get(indice);
+        usadas.add(elegida);
+
+        return elegida;
+    }
 }
