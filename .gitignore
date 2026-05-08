@@ -1,1 +1,19 @@
 /.metadata/
+# Eclipse / workspace
+.metadata/
+**/.metadata/
+*.log
+*.lock
+.location
+
+# Archivos compilados Java
+bin/
+*.class
+
+# Archivos temporales
+*.tmp
+*.bak
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
