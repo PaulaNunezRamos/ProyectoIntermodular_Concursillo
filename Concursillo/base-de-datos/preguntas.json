@@ -1,15 +1,54 @@
 [
   {
-    "pregunta": "Cual es la capital de Espana?",
+    "pregunta": "Cual es la capital de España?",
     "opcionA": "Barcelona",
     "opcionB": "Madrid",
     "opcionC": "Valencia",
     "opcionD": "Sevilla",
     "correcta": "B",
     "nivel": 1,
-    "pista": "Es donde esta el gobierno",
     "categoria": "Geografia"
   },
+  {
+	    "pregunta": "Cuantos océanos hay en la Tiera?",
+	    "opcionA": "4",
+	    "opcionB": "3",
+	    "opcionC": "5",
+	    "opcionD": "2",
+	    "correcta": "C",
+	    "nivel": 1,
+	    "categoria": "Geografia"
+	  },
+  {
+	      "pregunta": "Cual es el desierto más grande del mundo?",
+	      "opcionA": "Desierto Sirio",
+	      "opcionB": "Desierto de la Gran Cuenca",
+	      "opcionC": "Desierto del Sáhara",
+	      "opcionD": "Desierto de Arabia",
+	      "correcta": "C",
+	      "nivel": 1,
+	      "categoria": "Geografia"
+	    },
+  {
+		    "pregunta": "Cual es la montaña más alta de Espana?",
+		    "opcionA": "Teide",
+		    "opcionB": "Mulhacén",
+		    "opcionC": "Aneto",
+		    "opcionD": "Almanzor",
+		    "correcta": "A",
+		    "nivel": 1,
+		    "categoria": "Geografia"
+		  },
+   {
+		  	    "pregunta": "Cual de estos países no es Europeo ?",
+		  	    "opcionA": "España",
+		  	    "opcionB": "Italia",
+		  	    "opcionC": "Francia",
+		  	    "opcionD": "Colombia",
+		  	    "correcta": "D",
+		  	    "nivel": 1,
+		  	    "categoria": "Geografia"
+		  	  },
   {
     "pregunta": "Con que objeto se descubrio la gravedad?",
     "opcionA": "Manzana",
@@ -19,6 +58,66 @@
     "correcta": "A",
     "nivel": 1,
     "categoria": "Física"
+  },
+  {
+    "pregunta": "Masa por aceleración es igual a ...",
+    "opcionA": "Gravedad",
+    "opcionB": "Fuerza",
+    "opcionC": "Velocidad",
+    "opcionD": "Área",
+    "correcta": "B",
+    "nivel": 1,
+    "categoria": "Física"
+  },
+  {
+    "pregunta": "Que pasa cuando 2 cargas (negativa y positiva) interactúan?",
+    "opcionA": "Se repelen",
+    "opcionB": "Se suman",
+    "opcionC": "Se atraen",
+    "opcionD": "Se restan",
+    "correcta": "C",
+    "nivel": 1,
+    "categoria": "Física"
+  },
+  {
+    "pregunta": "Cual es la capital de España?",
+    "opcionA": "Barcelona",
+    "opcionB": "Madrid",
+    "opcionC": "Valencia",
+    "opcionD": "Sevilla",
+    "correcta": "B",
+    "nivel": 1,
+    "categoria": "Física"
+  },
+  {
+    "pregunta": "Cual es la capital de España?",
+    "opcionA": "Barcelona",
+    "opcionB": "Madrid",
+    "opcionC": "Valencia",
+    "opcionD": "Sevilla",
+    "correcta": "B",
+    "nivel": 1,
+    "categoria": "Física"
+  },
+  {
+    "pregunta": "Cual es la capital de España?",
+    "opcionA": "Barcelona",
+    "opcionB": "Madrid",
+    "opcionC": "Valencia",
+    "opcionD": "Sevilla",
+    "correcta": "B",
+    "nivel": 1,
+    "categoria": "Ciencia"
+  },
+  {
+    "pregunta": "Cual es la capital de España?",
+    "opcionA": "Barcelona",
+    "opcionB": "Madrid",
+    "opcionC": "Valencia",
+    "opcionD": "Sevilla",
+    "correcta": "B",
+    "nivel": 1,
+    "categoria": "Ciencia"
   },
   {
     "pregunta": "Que planeta esta mas cerca del Sol?",
@@ -159,7 +258,7 @@
     "pista": "Incluye America",
     "categoria": "Geografia"
   },
-  {
+{
     "pregunta": "Que elemento quimico tiene simbolo O?",
     "opcionA": "Oro",
     "opcionB": "Oxigeno",
