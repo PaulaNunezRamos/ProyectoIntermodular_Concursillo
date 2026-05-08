@@ -328,15 +328,16 @@ public class Partida {
 			return false;
 		}
 
-		// El mago solo se puede usar a partir de la pregunta 6
-		if (nivelActual < 6) {
+		// El mago solo se puede usar a partir de la pregunta 7
+		if (nivelActual < 7) {
 			return false;
 		}
 
 		int nivelDificultad = calcularNivelDificultad();
 		String categoriaActual = preguntaActual.getCategoria();
 
-		Pregunta nuevaPregunta = gestorPreguntas.obtenerPreguntaAleatoriaPorNivelYCategoria(nivelDificultad,
+		Pregunta nuevaPregunta = gestorPreguntas.obtenerPreguntaAleatoriaPorNivelYCategoria(
+				nivelDificultad,
 				categoriaActual);
 
 		if (nuevaPregunta != null) {
@@ -438,30 +439,30 @@ public class Partida {
 
 	public boolean recuperarComodinElegido(String comodin) {
 
-	    if (comodin == null || comodin.equals("")) {
-	        return false;
-	    }
+		if (comodin == null || comodin.equals("")) {
+			return false;
+		}
 
-	    if (partidaTerminada) {
-	        return false;
-	    }
+		if (partidaTerminada) {
+			return false;
+		}
 
-	    if (nivelActual < 8) {
-	        return false;
-	    }
+		if (nivelActual < 8) {
+			return false;
+		}
 
-	    if (recuperacionComodinUsada) {
-	        return false;
-	    }
+		if (recuperacionComodinUsada) {
+			return false;
+		}
 
-	    if (!estaComodinUsado(comodin)) {
-	        return false;
-	    }
+		if (!estaComodinUsado(comodin)) {
+			return false;
+		}
 
-	    recuperarComodin(comodin);
-	    recuperacionComodinUsada = true;
+		recuperarComodin(comodin);
+		recuperacionComodinUsada = true;
 
-	    return true;
+		return true;
 	}
 
 	// ---------------- GETTERS DE COMODINES ----------------
@@ -503,6 +504,6 @@ public class Partida {
 	}
 
 	public boolean puedeUsarComodinMago() {
-		return !comodinMagoUsado && nivelActual >= 6 && !partidaTerminada;
+		return !comodinMagoUsado && nivelActual >= 7 && !partidaTerminada;
 	}
 }

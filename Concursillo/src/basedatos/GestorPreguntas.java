@@ -76,8 +76,12 @@ public class GestorPreguntas {
 
         return elegida;
     }
-    
+
     public Pregunta obtenerPreguntaAleatoriaPorNivelYCategoria(int nivelBuscado, String categoriaBuscada) {
+
+        if (categoriaBuscada == null || categoriaBuscada.equals("")) {
+            return null;
+        }
 
         MongoDatabase baseDatos = ConexionMongo.conectar();
         MongoCollection<Document> coleccion = baseDatos.getCollection("preguntas");
