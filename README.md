@@ -79,4 +79,3 @@ Actualmente, el código fuente está organizado siguiendo el patrón de diseño 
     *   Yolanda Moreno (@YMorenoG) - Entornos de Desarrollo
     *   David García (@DavidGarciaEFA) - Programación
     *   Jesús Santiago Rico (@JesusEFA) - Base de datos
-"""
