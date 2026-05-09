@@ -10,45 +10,45 @@
     "categoria": "Geografia"
   },
   {
-	    "pregunta": "Cuantos océanos hay en la Tiera?",
-	    "opcionA": "4",
-	    "opcionB": "3",
-	    "opcionC": "5",
-	    "opcionD": "2",
-	    "correcta": "C",
-	    "nivel": 1,
-	    "categoria": "Geografia"
-	  },
+	"pregunta": "Cuantos océanos hay en la Tiera?",
+	"opcionA": "4",
+	"opcionB": "3",
+	"opcionC": "5",
+	"opcionD": "2",
+	"correcta": "C",
+	"nivel": 1,
+	"categoria": "Geografia"
+  },
   {
-	      "pregunta": "Cual es el desierto más grande del mundo?",
-	      "opcionA": "Desierto Sirio",
-	      "opcionB": "Desierto de la Gran Cuenca",
-	      "opcionC": "Desierto del Sáhara",
-	      "opcionD": "Desierto de Arabia",
-	      "correcta": "C",
-	      "nivel": 1,
-	      "categoria": "Geografia"
-	    },
+	"pregunta": "Cual es el desierto más grande del mundo?",
+	"opcionA": "Desierto Sirio",
+	"opcionB": "Desierto de la Gran Cuenca",
+	"opcionC": "Desierto del Sáhara",
+	"opcionD": "Desierto de Arabia",
+	"correcta": "C",
+	"nivel": 1,
+	"categoria": "Geografia"
+  },
   {
-		    "pregunta": "Cual es la montaña más alta de Espana?",
-		    "opcionA": "Teide",
-		    "opcionB": "Mulhacén",
-		    "opcionC": "Aneto",
-		    "opcionD": "Almanzor",
-		    "correcta": "A",
-		    "nivel": 1,
-		    "categoria": "Geografia"
-		  },
+     "pregunta": "Cual es la montaña más alta de Espana?",
+     "opcionA": "Teide",
+     "opcionB": "Mulhacén",
+     "opcionC": "Aneto",
+     "opcionD": "Almanzor",
+     "correcta": "A",
+     "nivel": 1,
+     "categoria": "Geografia"
+   },
    {
-		  	    "pregunta": "Cual de estos países no es Europeo ?",
-		  	    "opcionA": "España",
-		  	    "opcionB": "Italia",
-		  	    "opcionC": "Francia",
-		  	    "opcionD": "Colombia",
-		  	    "correcta": "D",
-		  	    "nivel": 1,
-		  	    "categoria": "Geografia"
-		  	  },
+	"pregunta": "Cual de estos países no es Europeo ?",
+	"opcionA": "España",
+    "opcionB": "Italia",
+    "opcionC": "Francia",
+    "opcionD": "Colombia",
+	"correcta": "D",
+	"nivel": 1,
+	"categoria": "Geografia"
+  },
   {
     "pregunta": "Con que objeto se descubrio la gravedad?",
     "opcionA": "Manzana",
@@ -80,12 +80,22 @@
     "categoria": "Física"
   },
   {
-    "pregunta": "Cual es la capital de España?",
-    "opcionA": "Barcelona",
-    "opcionB": "Madrid",
-    "opcionC": "Valencia",
-    "opcionD": "Sevilla",
-    "correcta": "B",
+    "pregunta": "Las siglas MRU qué significan?",
+    "opcionA": "Movimiento rotatorio uniforme",
+    "opcionB": "Movimiento resistente unido",
+    "opcionC": "Movimiento rectilíneo uniforme",
+    "opcionD": "Movimiento rotatorio unido",
+    "correcta": "C",
+    "nivel": 1,
+    "categoria": "Física"
+  },
+  {
+    "pregunta": "Cual es la unidad en el Sistema Internacional?",
+    "opcionA": "km",
+    "opcionB": "kg",
+    "opcionC": "m",
+    "opcionD": "ms",
+    "correcta": "C",
     "nivel": 1,
     "categoria": "Física"
   },
@@ -97,8 +107,7 @@
     "opcionD": "Sevilla",
     "correcta": "B",
     "nivel": 1,
-    "categoria": "Física"
-  },
+    "categoria": "Astronomía"  },
   {
     "pregunta": "Cual es la capital de España?",
     "opcionA": "Barcelona",
@@ -107,8 +116,7 @@
     "opcionD": "Sevilla",
     "correcta": "B",
     "nivel": 1,
-    "categoria": "Ciencia"
-  },
+    "categoria": "Astronomía"  },
   {
     "pregunta": "Cual es la capital de España?",
     "opcionA": "Barcelona",
@@ -117,8 +125,16 @@
     "opcionD": "Sevilla",
     "correcta": "B",
     "nivel": 1,
-    "categoria": "Ciencia"
-  },
+    "categoria": "Astronomía"  },
+  {
+    "pregunta": "Cual es la capital de España?",
+    "opcionA": "Barcelona",
+    "opcionB": "Madrid",
+    "opcionC": "Valencia",
+    "opcionD": "Sevilla",
+    "correcta": "B",
+    "nivel": 1,
+    "categoria": "Astronomía"  },
   {
     "pregunta": "Que planeta esta mas cerca del Sol?",
     "opcionA": "Venus",
@@ -127,9 +143,7 @@
     "opcionD": "Marte",
     "correcta": "C",
     "nivel": 1,
-    "pista": "Es el mas pequeno",
-    "categoria": "Ciencia"
-  },
+    "categoria": "Astronomía"  },
   {
     "pregunta": "Que color resulta de mezclar rojo y blanco?",
     "opcionA": "Rosa",
@@ -138,7 +152,46 @@
     "opcionD": "Gris",
     "correcta": "A",
     "nivel": 1,
-    "pista": "Color tipico de flores",
+    "categoria": "Arte"
+  },
+  {
+    "pregunta": "Qué es una escultura?",
+    "opcionA": "Es el arte de crear obras tridimensionales con un material",
+    "opcionB": "Es el arte de crear obras bidimensionales con un material",
+    "opcionC": "Es el arte de crear obras unidimensionales con un material",
+    "opcionD": "Ninguna es correcta",
+    "correcta": "A",
+    "nivel": 1,
+    "categoria": "Arte"
+  },
+  {
+    "pregunta": "Qué es el contraste?",
+    "opcionA": "Es la diferencia clara entre diferentes elementos visuales u opuestos para destacar una obra",
+    "opcionB": "Es la suma de los mismos colores para destacar una obra",
+    "opcionC": "Todas son correctas",
+    "opcionD": "Ninguna es correcta",
+    "correcta": "A",
+    "nivel": 1,
+    "categoria": "Arte"
+  },
+  {
+    "pregunta": "Qué es un boceto?",
+    "opcionA": "Es un dibujo rápido y sencillo que sirve como borrador",
+    "opcionB": "Un color que se usa para contrastar un dibujo",
+    "opcionC": "Una escultura de mármol",
+    "opcionD": "Ninguna es correcta",
+    "correcta": "A",
+    "nivel": 1,
+    "categoria": "Arte"
+  },
+  {
+    "pregunta": "El color es un elemento crucial en el arte?",
+    "opcionA": "No",
+    "opcionB": "Sí",
+    "opcionC": "Sólo en algunas obras",
+    "opcionD": "Ninguna es correcta",
+    "correcta": "B",
+    "nivel": 1,
     "categoria": "Arte"
   },
   {
@@ -190,7 +243,7 @@
     "opcionD": "H2E",
     "correcta": "A",
     "nivel": 1,
-    "categoria": "Ciencia"
+    "categoria": "Quimica"
   },
   {
     "pregunta": "Que deporte se juega con un balon redondo?",
@@ -300,7 +353,7 @@
     "correcta": "B",
     "nivel": 2,
     "pista": "Se usa cuando tienes fiebre",
-    "categoria": "Ciencia"
+    "categoria": "Física"
   },
   {
     "pregunta": "Cuantos jugadores tiene un equipo de futbol?",
@@ -333,7 +386,7 @@
     "correcta": "B",
     "nivel": 3,
     "pista": "E = mc2",
-    "categoria": "Ciencia"
+    "categoria": "Física"
   },
   {
     "pregunta": "Que pais gano el mundial 2010?",
@@ -378,17 +431,6 @@
     "nivel": 3,
     "pista": "Pais asiatico",
     "categoria": "Historia"
-  },
-  {
-    "pregunta": "Que cientifico descubrio la penicilina?",
-    "opcionA": "Pasteur",
-    "opcionB": "Fleming",
-    "opcionC": "Darwin",
-    "opcionD": "Curie",
-    "correcta": "B",
-    "nivel": 3,
-    "pista": "Su apellido empieza por F",
-    "categoria": "Ciencia"
   },
   {
     "pregunta": "Cual es el lenguaje de programacion de paginas dinamicas en servidor?",
