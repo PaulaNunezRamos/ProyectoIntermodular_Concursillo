@@ -25,13 +25,16 @@ public class PantallaJuego extends JFrame {
 
 	private JPanel contentPane;
 
+	private Partida partida;
+
 	private JButton btnPreguntas;
 	private JButton btnRespuestaA;
 	private JButton btnRespuestaB;
 	private JButton btnRespuestaC;
 	private JButton btnRespuestaD;
 
-	private Partida partida;
+	private JLabel lblInfo;
+
 	private ArrayList<String> opcionesEliminadas = new ArrayList<String>();
 
 	public static void main(String[] args) {
@@ -53,11 +56,14 @@ public class PantallaJuego extends JFrame {
 
 	public PantallaJuego(String nombreJugador) {
 
-		partida = new Partida(nombreJugador);
+		this.partida = new Partida(nombreJugador);
 
 		URL iconoVentana = getClass().getResource("/assets/Logo Grande.png");
+
 		if (iconoVentana != null) {
 			setIconImage(Toolkit.getDefaultToolkit().getImage(iconoVentana));
+		} else {
+			System.out.println("No se encontró el icono de la ventana.");
 		}
 
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -73,80 +79,96 @@ public class PantallaJuego extends JFrame {
 
 		JButton btnVerDinero = new JButton("");
 		btnVerDinero.setIcon(cargarIcono("/assets/Ver dinero.png"));
-		configurarBotonImagen(btnVerDinero);
+		configurarBotonTransparente(btnVerDinero);
 		btnVerDinero.setBounds(10, 0, 93, 77);
 		contentPane.add(btnVerDinero);
 
 		btnVerDinero.addActionListener(e -> {
-			Dinero ventanaDinero = new Dinero();
+			Dinero ventanaDinero = new Dinero(
+					partida.getNombreJugador(),
+					partida.getNivelActual(),
+					partida.getDineroAcumulado()
+			);
 			ventanaDinero.setVisible(true);
 		});
 
 		JButton btnSalir = new JButton("");
 		btnSalir.setIcon(cargarIcono("/assets/Salir.png"));
-		configurarBotonImagen(btnSalir);
+		configurarBotonTransparente(btnSalir);
 		btnSalir.setBounds(97, 0, 93, 70);
 		contentPane.add(btnSalir);
 
-		btnSalir.addActionListener(e -> {
-			PantallaPrin ventanaMenu = new PantallaPrin();
-			ventanaMenu.setVisible(true);
-			dispose();
-		});
+		btnSalir.addActionListener(e -> volverAlMenu());
+
+		lblInfo = new JLabel("", SwingConstants.CENTER);
+		lblInfo.setForeground(Color.WHITE);
+		lblInfo.setFont(new Font("Arial", Font.BOLD, 14));
+		lblInfo.setBounds(210, 10, 420, 30);
+		contentPane.add(lblInfo);
 
 		JButton btnComodin50 = new JButton("");
 		btnComodin50.setIcon(cargarIcono("/assets/Comodin 50-50.png"));
-		configurarBotonImagen(btnComodin50);
+		configurarBotonTransparente(btnComodin50);
 		btnComodin50.setBounds(544, 0, 93, 70);
 		contentPane.add(btnComodin50);
 
 		btnComodin50.addActionListener(e -> {
+
 			String[] eliminadas = partida.usarComodin5050(opcionesEliminadas);
 
 			if (eliminadas.length == 0) {
 				JOptionPane.showMessageDialog(this, "El comodín 50:50 ya no está disponible.");
-			} else {
-				for (String eliminada : eliminadas) {
-					opcionesEliminadas.add(eliminada);
-					ocultarRespuesta(eliminada);
-				}
-
-				btnComodin50.setEnabled(false);
+				return;
 			}
+
+			for (String opcion : eliminadas) {
+				opcionesEliminadas.add(opcion);
+				ocultarRespuesta(opcion);
+			}
+
+			btnComodin50.setEnabled(false);
+
+			JOptionPane.showMessageDialog(this, "Se han eliminado dos respuestas incorrectas.");
 		});
 
 		JButton btnComodinPublico = new JButton("");
 		btnComodinPublico.setIcon(cargarIcono("/assets/Comodin Publico.png"));
-		configurarBotonImagen(btnComodinPublico);
+		configurarBotonTransparente(btnComodinPublico);
 		btnComodinPublico.setBounds(636, 10, 93, 56);
 		contentPane.add(btnComodinPublico);
 
 		btnComodinPublico.addActionListener(e -> {
+
 			int[] porcentajes = partida.usarComodinChat();
 
 			if (porcentajes.length == 0) {
-				JOptionPane.showMessageDialog(this, "El comodín del público ya no está disponible.");
-			} else {
-				JOptionPane.showMessageDialog(
-						this,
-						"A: " + porcentajes[0] + "%\n"
-								+ "B: " + porcentajes[1] + "%\n"
-								+ "C: " + porcentajes[2] + "%\n"
-								+ "D: " + porcentajes[3] + "%");
-
-				btnComodinPublico.setEnabled(false);
+				JOptionPane.showMessageDialog(this, "El comodín del público/chat ya no está disponible.");
+				return;
 			}
+
+			String mensaje = "Resultados del público/chat:\n\n"
+					+ "A: " + porcentajes[0] + "%\n"
+					+ "B: " + porcentajes[1] + "%\n"
+					+ "C: " + porcentajes[2] + "%\n"
+					+ "D: " + porcentajes[3] + "%";
+
+			JOptionPane.showMessageDialog(this, mensaje);
+
+			btnComodinPublico.setEnabled(false);
 		});
 
 		JButton btnComodinLlamada = new JButton("");
 		btnComodinLlamada.setIcon(cargarIcono("/assets/Comodin Llamada.png"));
-		configurarBotonImagen(btnComodinLlamada);
+		configurarBotonTransparente(btnComodinLlamada);
 		btnComodinLlamada.setBounds(729, 10, 93, 56);
 		contentPane.add(btnComodinLlamada);
 
 		btnComodinLlamada.addActionListener(e -> {
+
 			String mensaje = partida.usarComodinLlamada();
+
 			JOptionPane.showMessageDialog(this, mensaje);
+
 			btnComodinLlamada.setEnabled(false);
 		});
 
@@ -159,8 +181,7 @@ public class PantallaJuego extends JFrame {
 
 		btnPreguntas = new JButton("");
 		btnPreguntas.setIcon(cargarIcono("/assets/Caja Preguntas.png"));
-		configurarBotonImagen(btnPreguntas);
-		configurarBotonTexto(btnPreguntas, 16);
+		configurarBotonConTexto(btnPreguntas, 15);
 		btnPreguntas.setBounds(71, 296, 700, 89);
 		contentPane.add(btnPreguntas);
 
@@ -168,36 +189,31 @@ public class PantallaJuego extends JFrame {
 
 		btnRespuestaA = new JButton("");
 		btnRespuestaA.setIcon(cargarIcono("/assets/Caja Respuestas.png"));
-		configurarBotonImagen(btnRespuestaA);
-		configurarBotonTexto(btnRespuestaA, 14);
+		configurarBotonConTexto(btnRespuestaA, 13);
 		btnRespuestaA.setBounds(24, 395, 373, 56);
+		btnRespuestaA.addActionListener(e -> responder("A"));
 		contentPane.add(btnRespuestaA);
 
 		btnRespuestaB = new JButton("");
 		btnRespuestaB.setIcon(cargarIcono("/assets/Caja Respuestas.png"));
-		configurarBotonImagen(btnRespuestaB);
-		configurarBotonTexto(btnRespuestaB, 14);
+		configurarBotonConTexto(btnRespuestaB, 13);
 		btnRespuestaB.setBounds(427, 395, 373, 56);
+		btnRespuestaB.addActionListener(e -> responder("B"));
 		contentPane.add(btnRespuestaB);
 
 		btnRespuestaC = new JButton("");
 		btnRespuestaC.setIcon(cargarIcono("/assets/Caja Respuestas.png"));
-		configurarBotonImagen(btnRespuestaC);
-		configurarBotonTexto(btnRespuestaC, 14);
+		configurarBotonConTexto(btnRespuestaC, 13);
 		btnRespuestaC.setBounds(24, 452, 373, 56);
+		btnRespuestaC.addActionListener(e -> responder("C"));
 		contentPane.add(btnRespuestaC);
 
 		btnRespuestaD = new JButton("");
 		btnRespuestaD.setIcon(cargarIcono("/assets/Caja Respuestas.png"));
-		configurarBotonImagen(btnRespuestaD);
-		configurarBotonTexto(btnRespuestaD, 14);
+		configurarBotonConTexto(btnRespuestaD, 13);
 		btnRespuestaD.setBounds(427, 452, 373, 56);
+		btnRespuestaD.addActionListener(e -> responder("D"));
 		contentPane.add(btnRespuestaD);
-
-		btnRespuestaA.addActionListener(e -> comprobarRespuesta("A"));
-		btnRespuestaB.addActionListener(e -> comprobarRespuesta("B"));
-		btnRespuestaC.addActionListener(e -> comprobarRespuesta("C"));
-		btnRespuestaD.addActionListener(e -> comprobarRespuesta("D"));
 
 		// --- LÍNEAS DE DISEÑO ---
 
@@ -248,101 +264,10 @@ public class PantallaJuego extends JFrame {
 		lblFondo.setBounds(0, 0, 832, 518);
 		contentPane.add(lblFondo);
 
-		cargarPregunta();
+		cargarPreguntaEnPantalla();
 	}
 
-	private void cargarPregunta() {
-
-		if (partida.isPartidaTerminada()) {
-			terminarPartida("La partida ha terminado.");
-			return;
-		}
-
-		Pregunta p = partida.getPreguntaActual();
-
-		if (p == null) {
-			terminarPartida("No se ha podido cargar ninguna pregunta.");
-			return;
-		}
-
-		btnPreguntas.setText(
-				"<html><center>Pregunta " + partida.getNivelActual() + ": " + p.getPregunta() + "</center></html>");
-		btnRespuestaA.setText("<html><center>A: " + p.getOpcionA() + "</center></html>");
-		btnRespuestaB.setText("<html><center>B: " + p.getOpcionB() + "</center></html>");
-		btnRespuestaC.setText("<html><center>C: " + p.getOpcionC() + "</center></html>");
-		btnRespuestaD.setText("<html><center>D: " + p.getOpcionD() + "</center></html>");
-
-		btnRespuestaA.setEnabled(true);
-		btnRespuestaB.setEnabled(true);
-		btnRespuestaC.setEnabled(true);
-		btnRespuestaD.setEnabled(true);
-	}
-
-	private void comprobarRespuesta(String respuestaElegida) {
-
-		if (opcionesEliminadas.contains(respuestaElegida)) {
-			JOptionPane.showMessageDialog(this, "Esa respuesta ha sido eliminada por un comodín.");
-			return;
-		}
-
-		Pregunta preguntaRespondida = partida.getPreguntaActual();
-
-		boolean acierto = partida.comprobarRespuesta(respuestaElegida);
-
-		if (acierto) {
-
-			if (partida.isPartidaTerminada()) {
-				terminarPartida("¡Has ganado el juego!");
-			} else {
-				JOptionPane.showMessageDialog(this, "¡Correcto!");
-				opcionesEliminadas.clear();
-				cargarPregunta();
-			}
-
-		} else {
-
-			String correcta = "";
-
-			if (preguntaRespondida != null) {
-				correcta = preguntaRespondida.getCorrecta();
-			}
-
-			terminarPartida("Incorrecto. La respuesta correcta era: " + correcta);
-		}
-	}
-
-	private void ocultarRespuesta(String letra) {
-
-		if (letra.equalsIgnoreCase("A")) {
-			btnRespuestaA.setText("<html><center>A: [eliminada]</center></html>");
-			btnRespuestaA.setEnabled(false);
-
-		} else if (letra.equalsIgnoreCase("B")) {
-			btnRespuestaB.setText("<html><center>B: [eliminada]</center></html>");
-			btnRespuestaB.setEnabled(false);
-
-		} else if (letra.equalsIgnoreCase("C")) {
-			btnRespuestaC.setText("<html><center>C: [eliminada]</center></html>");
-			btnRespuestaC.setEnabled(false);
-
-		} else if (letra.equalsIgnoreCase("D")) {
-			btnRespuestaD.setText("<html><center>D: [eliminada]</center></html>");
-			btnRespuestaD.setEnabled(false);
-		}
-	}
-
-	private void terminarPartida(String mensaje) {
-
-		JOptionPane.showMessageDialog(
-				this,
-				mensaje + "\nDinero final: " + partida.getDineroAcumulado() + " €");
-
-		PantallaPrin ventanaMenu = new PantallaPrin();
-		ventanaMenu.setVisible(true);
-		dispose();
-	}
-
-	private void configurarBotonImagen(JButton boton) {
+	private void configurarBotonTransparente(JButton boton) {
 
 		boton.setOpaque(false);
 		boton.setFocusPainted(false);
@@ -350,12 +275,144 @@ public class PantallaJuego extends JFrame {
 		boton.setBorderPainted(false);
 	}
 
-	private void configurarBotonTexto(JButton boton, int tamanoLetra) {
+	private void configurarBotonConTexto(JButton boton, int tamanoFuente) {
 
-		boton.setFont(new Font("Arial", Font.BOLD, tamanoLetra));
 		boton.setForeground(Color.WHITE);
+		boton.setFont(new Font("Arial", Font.BOLD, tamanoFuente));
 		boton.setHorizontalTextPosition(SwingConstants.CENTER);
 		boton.setVerticalTextPosition(SwingConstants.CENTER);
+		boton.setHorizontalAlignment(SwingConstants.CENTER);
+		boton.setVerticalAlignment(SwingConstants.CENTER);
+		boton.setOpaque(false);
+		boton.setFocusPainted(false);
+		boton.setContentAreaFilled(false);
+		boton.setBorderPainted(false);
+	}
+
+	private void cargarPreguntaEnPantalla() {
+
+		Pregunta pregunta = partida.getPreguntaActual();
+
+		restaurarRespuestas();
+
+		if (pregunta == null) {
+			JOptionPane.showMessageDialog(this, "No se ha podido cargar ninguna pregunta.");
+			volverAlMenu();
+			return;
+		}
+
+		btnPreguntas.setText("<html><div style='text-align:center; width:600px;'>"
+				+ pregunta.getPregunta()
+				+ "</div></html>");
+
+		btnRespuestaA.setText("<html><div style='text-align:center; width:280px;'>A: "
+				+ pregunta.getOpcionA()
+				+ "</div></html>");
+
+		btnRespuestaB.setText("<html><div style='text-align:center; width:280px;'>B: "
+				+ pregunta.getOpcionB()
+				+ "</div></html>");
+
+		btnRespuestaC.setText("<html><div style='text-align:center; width:280px;'>C: "
+				+ pregunta.getOpcionC()
+				+ "</div></html>");
+
+		btnRespuestaD.setText("<html><div style='text-align:center; width:280px;'>D: "
+				+ pregunta.getOpcionD()
+				+ "</div></html>");
+
+		actualizarInfo();
+	}
+
+	private void responder(String opcion) {
+
+		if (opcionesEliminadas.contains(opcion)) {
+			JOptionPane.showMessageDialog(this, "Esa respuesta ha sido eliminada por un comodín.");
+			return;
+		}
+
+		Pregunta preguntaAnterior = partida.getPreguntaActual();
+
+		if (preguntaAnterior == null) {
+			JOptionPane.showMessageDialog(this, "No hay pregunta cargada.");
+			return;
+		}
+
+		boolean acierto = partida.comprobarRespuesta(opcion);
+
+		if (acierto) {
+
+			JOptionPane.showMessageDialog(this, "¡Correcto!");
+
+			if (partida.isPartidaTerminada()) {
+				JOptionPane.showMessageDialog(
+						this,
+						"¡Has completado el juego!\nDinero final: " + formatearDinero(partida.getDineroAcumulado())
+				);
+				volverAlMenu();
+			} else {
+				cargarPreguntaEnPantalla();
+			}
+
+		} else {
+
+			JOptionPane.showMessageDialog(
+					this,
+					"Incorrecto.\nLa respuesta correcta era: " + preguntaAnterior.getCorrecta()
+							+ "\nDinero final: " + formatearDinero(partida.getDineroAcumulado())
+			);
+
+			volverAlMenu();
+		}
+	}
+
+	private void actualizarInfo() {
+
+		lblInfo.setText(
+				"Nivel: " + partida.getNivelActual()
+						+ " | Dinero: " + formatearDinero(partida.getDineroAcumulado())
+		);
+	}
+
+	private void volverAlMenu() {
+
+		PantallaPrin menu = new PantallaPrin();
+		menu.setVisible(true);
+		dispose();
+	}
+
+	private void ocultarRespuesta(String opcion) {
+
+		if (opcion.equalsIgnoreCase("A")) {
+			btnRespuestaA.setText("");
+			btnRespuestaA.setEnabled(false);
+
+		} else if (opcion.equalsIgnoreCase("B")) {
+			btnRespuestaB.setText("");
+			btnRespuestaB.setEnabled(false);
+
+		} else if (opcion.equalsIgnoreCase("C")) {
+			btnRespuestaC.setText("");
+			btnRespuestaC.setEnabled(false);
+
+		} else if (opcion.equalsIgnoreCase("D")) {
+			btnRespuestaD.setText("");
+			btnRespuestaD.setEnabled(false);
+		}
+	}
+
+	private void restaurarRespuestas() {
+
+		opcionesEliminadas.clear();
+
+		btnRespuestaA.setEnabled(true);
+		btnRespuestaB.setEnabled(true);
+		btnRespuestaC.setEnabled(true);
+		btnRespuestaD.setEnabled(true);
+	}
+
+	private String formatearDinero(int cantidad) {
+		return String.format("%,d €", cantidad).replace(",", ".");
 	}
 
 	private ImageIcon cargarIcono(String ruta) {

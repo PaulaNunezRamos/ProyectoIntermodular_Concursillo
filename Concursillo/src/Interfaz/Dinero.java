@@ -1,6 +1,8 @@
 package Interfaz;
 
+import java.awt.Color;
 import java.awt.EventQueue;
+import java.awt.Font;
 import java.awt.Toolkit;
 import java.net.URL;
 
@@ -8,18 +10,26 @@ import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+import javax.swing.SwingConstants;
 import javax.swing.border.EmptyBorder;
 
 public class Dinero extends JFrame {
 
 	private static final long serialVersionUID = 1L;
+
 	private JPanel contentPane;
+
+	private final int[] premios = {
+			0, 100, 250, 500, 750, 1500, 2500, 5000,
+			10000, 20000, 30000, 50000, 100000, 300000,
+			600000, 1000000
+	};
 
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					Dinero frame = new Dinero();
+					Dinero frame = new Dinero("Jugador", 1, 0);
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -29,15 +39,20 @@ public class Dinero extends JFrame {
 	}
 
 	public Dinero() {
+		this("Jugador", 1, 0);
+	}
+
+	public Dinero(String nombreJugador, int nivelActual, int dineroAcumulado) {
 
 		URL iconoVentana = getClass().getResource("/assets/Logo Grande.png");
 
 		if (iconoVentana != null) {
 			setIconImage(Toolkit.getDefaultToolkit().getImage(iconoVentana));
 		} else {
-			System.out.println("No se encontró el icono de dinero.");
+			System.out.println("No se encontró el icono de la ventana.");
 		}
 
+		setTitle("Dinero acumulado");
 		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		setBounds(100, 100, 300, 455);
 		setLocationRelativeTo(null);
@@ -47,10 +62,66 @@ public class Dinero extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 
+		pintarPremios(nivelActual);
+		pintarInformacion(nombreJugador, nivelActual, dineroAcumulado);
+
 		JLabel lblFondo = new JLabel("");
 		lblFondo.setIcon(cargarIcono("/assets/Fondo .jpg"));
 		lblFondo.setBounds(0, 0, 286, 418);
 		contentPane.add(lblFondo);
+	}
+
+	private void pintarPremios(int nivelActual) {
+
+		int y = 18;
+
+		for (int i = 15; i >= 1; i--) {
+
+			JLabel lblPremio = new JLabel(i + "     " + formatearDinero(premios[i]));
+			lblPremio.setFont(new Font("Arial", Font.BOLD, 12));
+			lblPremio.setBounds(35, y, 210, 20);
+			lblPremio.setHorizontalAlignment(SwingConstants.LEFT);
+
+			if (i == nivelActual) {
+				lblPremio.setOpaque(true);
+				lblPremio.setBackground(new Color(255, 150, 0));
+				lblPremio.setForeground(Color.WHITE);
+
+			} else if (i == 5 || i == 10 || i == 15) {
+				lblPremio.setForeground(new Color(255, 220, 80));
+
+			} else {
+				lblPremio.setForeground(Color.WHITE);
+			}
+
+			contentPane.add(lblPremio);
+			y += 21;
+		}
+	}
+
+	private void pintarInformacion(String nombreJugador, int nivelActual, int dineroAcumulado) {
+
+		JLabel lblJugador = new JLabel("Jugador: " + nombreJugador, SwingConstants.CENTER);
+		lblJugador.setForeground(Color.WHITE);
+		lblJugador.setFont(new Font("Arial", Font.BOLD, 12));
+		lblJugador.setBounds(20, 340, 245, 20);
+		contentPane.add(lblJugador);
+
+		JLabel lblDinero = new JLabel("Dinero: " + formatearDinero(dineroAcumulado), SwingConstants.CENTER);
+		lblDinero.setForeground(Color.WHITE);
+		lblDinero.setFont(new Font("Arial", Font.BOLD, 12));
+		lblDinero.setBounds(20, 363, 245, 20);
+		contentPane.add(lblDinero);
+
+		JLabel lblNivel = new JLabel("Nivel actual: " + nivelActual, SwingConstants.CENTER);
+		lblNivel.setForeground(Color.WHITE);
+		lblNivel.setFont(new Font("Arial", Font.BOLD, 12));
+		lblNivel.setBounds(20, 386, 245, 20);
+		contentPane.add(lblNivel);
+	}
+
+	private String formatearDinero(int cantidad) {
+		return String.format("%,d €", cantidad).replace(",", ".");
 	}
 
 	private ImageIcon cargarIcono(String ruta) {
