@@ -110,7 +110,6 @@
     "categoria": "Física"
   },
   {
-<<<<<<< HEAD
     "pregunta": "Cual es la capital de España?",
     "opcionA": "Barcelona",
     "opcionB": "Madrid",
@@ -165,7 +164,7 @@
     "correcta": "C",
     "nivel": 1,
     "categoria": "Astronomía"  },
-=======
+	{
       "pregunta": "¿Cuál es el planeta más cercano al Sol?",
       "opcionA": "Venus",
       "opcionB": "Mercurio",
@@ -215,7 +214,6 @@
       "nivel": 1,
       "categoria": "Astronomía"
     },
->>>>>>> branch 'master' of https://github.com/PaulaNunezRamos/ProyectoIntermodular_Concursillo.git
   {
     "pregunta": "Que color resulta de mezclar rojo y blanco?",
     "opcionA": "Rosa",
@@ -1167,7 +1165,6 @@
 				      "categoria": "Deportes"
 				    },
   {
-<<<<<<< HEAD
     "pregunta": "Cual es el presidente actual Español?",
     "opcionA": "Pedro Sanchez",
     "opcionB": "Mariano Rajoy",
@@ -1257,21 +1254,20 @@
     "nivel": 2,
     "categoria": "Geografia"
   },
-<<<<<<< HEAD
+
   {
     "pregunta": "Como se representa el potasio en la tabla periodica?",
     "opcionA": "Ps",
     "opcionB": "K",
     "opcionC": "Pm",
-    "opcionD": "Pk",
-=======
+    "opcionD": "Pk"
+	},
 {
     "pregunta": "Que elemento quimico tiene simbolo O?",
     "opcionA": "Oro",
     "opcionB": "Oxigeno",
     "opcionC": "Osmio",
     "opcionD": "Oxido",
->>>>>>> branch 'master' of https://github.com/PaulaNunezRamos/ProyectoIntermodular_Concursillo.git
     "correcta": "B",
     "nivel": 2,
     "categoria": "Quimica"
@@ -1445,8 +1441,8 @@
     "correcta": "B",
     "nivel": 3,
     "categoria": "Historia"
-  }
-=======
+  },
+  {
       "pregunta": "¿Qué país tiene frontera con más países en el mundo?",
       "opcionA": "China",
       "opcionB": "Rusia",
@@ -2041,5 +2037,4 @@
 				      "pista": "Empieza por T",
 				      "categoria": "Deportes"
 				    }
->>>>>>> branch 'master' of https://github.com/PaulaNunezRamos/ProyectoIntermodular_Concursillo.git
 ]
