@@ -110,6 +110,7 @@
     "categoria": "Física"
   },
   {
+<<<<<<< HEAD
     "pregunta": "Cual es la capital de España?",
     "opcionA": "Barcelona",
     "opcionB": "Madrid",
@@ -164,6 +165,57 @@
     "correcta": "C",
     "nivel": 1,
     "categoria": "Astronomía"  },
+=======
+      "pregunta": "¿Cuál es el planeta más cercano al Sol?",
+      "opcionA": "Venus",
+      "opcionB": "Mercurio",
+      "opcionC": "Tierra",
+      "opcionD": "Marte",
+      "correcta": "B",
+      "nivel": 1,
+      "categoria": "Astronomía"
+    },
+    {
+      "pregunta": "¿Cómo se llama nuestro planeta?",
+      "opcionA": "Marte",
+      "opcionB": "Venus",
+      "opcionC": "Tierra",
+      "opcionD": "Júpiter",
+      "correcta": "C",
+      "nivel": 1,
+      "categoria": "Astronomía"
+    },
+    {
+      "pregunta": "¿Qué astro nos da luz durante el día?",
+      "opcionA": "La Luna",
+      "opcionB": "El Sol",
+      "opcionC": "Marte",
+      "opcionD": "Una estrella lejana",
+      "correcta": "B",
+      "nivel": 1,
+      "categoria": "Astronomía"
+    },
+    {
+      "pregunta": "¿Qué planeta es conocido como el planeta rojo?",
+      "opcionA": "Venus",
+      "opcionB": "Marte",
+      "opcionC": "Saturno",
+      "opcionD": "Neptuno",
+      "correcta": "B",
+      "nivel": 1,
+      "categoria": "Astronomía"
+    },
+    {
+      "pregunta": "¿Qué es la Luna?",
+      "opcionA": "Un planeta",
+      "opcionB": "Una estrella",
+      "opcionC": "Un satélite natural",
+      "opcionD": "Un cometa",
+      "correcta": "C",
+      "nivel": 1,
+      "categoria": "Astronomía"
+    },
+>>>>>>> branch 'master' of https://github.com/PaulaNunezRamos/ProyectoIntermodular_Concursillo.git
   {
     "pregunta": "Que color resulta de mezclar rojo y blanco?",
     "opcionA": "Rosa",
@@ -215,27 +267,907 @@
     "categoria": "Arte"
   },
   {
-    "pregunta": "Cual es el oceano mas grande?",
-    "opcionA": "Atlantico",
-    "opcionB": "Indico",
-    "opcionC": "Artico",
-    "opcionD": "Pacifico",
-    "correcta": "D",
-    "nivel": 1,
-    "pista": "Su nombre indica tranquilidad",
-    "categoria": "Geografia"
-  },
+      "pregunta": "¿Qué órgano bombea la sangre en el cuerpo humano?",
+      "opcionA": "Pulmón",
+      "opcionB": "Cerebro",
+      "opcionC": "Corazón",
+      "opcionD": "Hígado",
+      "correcta": "C",
+      "nivel": 1,
+      "categoria": "Biología"
+    },
+    {
+      "pregunta": "¿Qué ser vivo realiza la fotosíntesis?",
+      "opcionA": "Animales",
+      "opcionB": "Hongos",
+      "opcionC": "Plantas",
+      "opcionD": "Protozoos",
+      "correcta": "C",
+      "nivel": 1,
+      "categoria": "Biología"
+    },
+    {
+      "pregunta": "¿Cuántas piernas tiene un insecto?",
+      "opcionA": "4",
+      "opcionB": "6",
+      "opcionC": "8",
+      "opcionD": "10",
+      "correcta": "B",
+      "nivel": 1,
+      "categoria": "Biología"
+    },
+	{
+	    "pregunta": "¿Qué parte de la planta absorbe agua del suelo?",
+	    "opcionA": "Hojas",
+	    "opcionB": "Flores",
+	    "opcionC": "Raíces",
+	    "opcionD": "Tallo",
+	    "correcta": "C",
+	    "nivel": 1,
+	    "categoria": "Biología"
+	  },
+	  {
+	    "pregunta": "¿Qué animal es un mamífero?",
+	    "opcionA": "Tiburón",
+	    "opcionB": "Delfín",
+	    "opcionC": "Pez payaso",
+	    "opcionD": "Tortuga",
+	    "correcta": "B",
+	    "nivel": 1,
+	    "categoria": "Biología"
+	  },
+	  {
+	      "pregunta": "¿Cuál es el símbolo químico del agua?",
+	      "opcionA": "O2",
+	      "opcionB": "H2O",
+	      "opcionC": "CO2",
+	      "opcionD": "NaCl",
+	      "correcta": "B",
+	      "nivel": 1,
+	      "categoria": "Química"
+	    },
+	    {
+	      "pregunta": "¿Qué gas respiramos los humanos?",
+	      "opcionA": "Dióxido de carbono",
+	      "opcionB": "Oxígeno",
+	      "opcionC": "Nitrógeno",
+	      "opcionD": "Hidrógeno",
+	      "correcta": "B",
+	      "nivel": 1,
+	      "categoria": "Química"
+	    },
+	    {
+	      "pregunta": "¿Cuál es el estado del agua a temperatura ambiente?",
+	      "opcionA": "Sólido",
+	      "opcionB": "Líquido",
+	      "opcionC": "Gas",
+	      "opcionD": "Plasma",
+	      "correcta": "B",
+	      "nivel": 1,
+	      "categoria": "Química"
+	    },
+	    {
+	      "pregunta": "¿Qué elemento tiene el símbolo O?",
+	      "opcionA": "Oro",
+	      "opcionB": "Oxígeno",
+	      "opcionC": "Plata",
+	      "opcionD": "Ósmio",
+	      "correcta": "B",
+	      "nivel": 1,
+	      "categoria": "Química"
+	    },
+	    {
+	      "pregunta": "¿Qué sustancia forma la sal de mesa?",
+	      "opcionA": "H2O",
+	      "opcionB": "NaCl",
+	      "opcionC": "CO2",
+	      "opcionD": "O2",
+	      "correcta": "B",
+	      "nivel": 1,
+	      "categoria": "Química"
+	    },
+		{
+		    "pregunta": "¿Quién descubrió América en 1492?",
+		    "opcionA": "Cristóbal Colón",
+		    "opcionB": "Fernando de Magallanes",
+		    "opcionC": "Hernán Cortés",
+		    "opcionD": "Marco Polo",
+		    "correcta": "A",
+		    "nivel": 1,
+		    "categoria": "Historia"
+		  },
+		  {
+		    "pregunta": "¿En qué país se construyeron las pirámides de Giza?",
+		    "opcionA": "México",
+		    "opcionB": "Egipto",
+		    "opcionC": "Perú",
+		    "opcionD": "Grecia",
+		    "correcta": "B",
+		    "nivel": 1,
+		    "categoria": "Historia"
+		  },
+		  {
+		    "pregunta": "¿Quién fue el primer emperador de Roma?",
+		    "opcionA": "Julio César",
+		    "opcionB": "Augusto",
+		    "opcionC": "Nerón",
+		    "opcionD": "Trajano",
+		    "correcta": "B",
+		    "nivel": 1,
+		    "categoria": "Historia"
+		  },
+		  {
+		    "pregunta": "¿Qué civilización construyó Machu Picchu?",
+		    "opcionA": "Mayas",
+		    "opcionB": "Aztecas",
+		    "opcionC": "Incas",
+		    "opcionD": "Romanos",
+		    "correcta": "C",
+		    "nivel": 1,
+		    "categoria": "Historia"
+		  },
+		  {
+		    "pregunta": "¿En qué continente ocurrió la Revolución Francesa?",
+		    "opcionA": "Asia",
+		    "opcionB": "África",
+		    "opcionC": "Europa",
+		    "opcionD": "América",
+		    "correcta": "C",
+		    "nivel": 1,
+		    "categoria": "Historia"
+		  },
+		  {
+		      "pregunta": "¿Quién escribió Don Quijote de la Mancha?",
+		      "opcionA": "Miguel de Cervantes",
+		      "opcionB": "Lope de Vega",
+		      "opcionC": "Gabriel García Márquez",
+		      "opcionD": "Federico García Lorca",
+		      "correcta": "A",
+		      "nivel": 1,
+		      "categoria": "Literatura"
+		    },
+		    {
+		      "pregunta": "¿Qué es un poema?",
+		      "opcionA": "Un tipo de pintura",
+		      "opcionB": "Un texto literario en verso",
+		      "opcionC": "Un instrumento musical",
+		      "opcionD": "Una novela corta",
+		      "correcta": "B",
+		      "nivel": 1,
+		      "categoria": "Literatura"
+		    },
+		    {
+		      "pregunta": "¿Qué género literario narra historias inventadas?",
+		      "opcionA": "Lírica",
+		      "opcionB": "Ensayo",
+		      "opcionC": "Narrativa",
+		      "opcionD": "Drama",
+		      "correcta": "C",
+		      "nivel": 1,
+		      "categoria": "Literatura"
+		    },
+		    {
+		      "pregunta": "¿Qué autor es conocido por Romeo y Julieta?",
+		      "opcionA": "William Shakespeare",
+		      "opcionB": "Miguel de Cervantes",
+		      "opcionC": "Edgar Allan Poe",
+		      "opcionD": "Jorge Luis Borges",
+		      "correcta": "A",
+		      "nivel": 1,
+		      "categoria": "Literatura"
+		    },
+		    {
+		      "pregunta": "¿Qué es una novela?",
+		      "opcionA": "Un poema corto",
+		      "opcionB": "Un texto dramático",
+		      "opcionC": "Una obra narrativa extensa",
+		      "opcionD": "Un artículo científico",
+		      "correcta": "C",
+		      "nivel": 1,
+		      "categoria": "Literatura"
+		    },
+			{
+			    "pregunta": "¿Qué dispositivo usamos para escribir en el ordenador?",
+			    "opcionA": "Monitor",
+			    "opcionB": "Teclado",
+			    "opcionC": "Ratón",
+			    "opcionD": "Impresora",
+			    "correcta": "B",
+			    "nivel": 1,
+			    "categoria": "Informática"
+			  },
+			  {
+			    "pregunta": "¿Qué es un ordenador?",
+			    "opcionA": "Un programa",
+			    "opcionB": "Una máquina que procesa información",
+			    "opcionC": "Un archivo",
+			    "opcionD": "Un navegador",
+			    "correcta": "B",
+			    "nivel": 1,
+			    "categoria": "Informática"
+			  },
+			  {
+			    "pregunta": "¿Qué dispositivo muestra la información visual?",
+			    "opcionA": "Teclado",
+			    "opcionB": "Ratón",
+			    "opcionC": "Monitor",
+			    "opcionD": "CPU",
+			    "correcta": "C",
+			    "nivel": 1,
+			    "categoria": "Informática"
+			  },
+			  {
+			    "pregunta": "¿Qué es un archivo?",
+			    "opcionA": "Un programa de diseño",
+			    "opcionB": "Un conjunto de datos almacenados",
+			    "opcionC": "Un hardware",
+			    "opcionD": "Un virus",
+			    "correcta": "B",
+			    "nivel": 1,
+			    "categoria": "Informática"
+			  },
+			  {
+			    "pregunta": "¿Qué usamos para mover el cursor?",
+			    "opcionA": "Teclado",
+			    "opcionB": "Altavoces",
+			    "opcionC": "Ratón",
+			    "opcionD": "Pantalla",
+			    "correcta": "C",
+			    "nivel": 1,
+			    "categoria": "Informática"
+			  },
+			  {
+			      "pregunta": "¿Cuántas notas musicales básicas existen?",
+			      "opcionA": "5",
+			      "opcionB": "6",
+			      "opcionC": "7",
+			      "opcionD": "8",
+			      "correcta": "C",
+			      "nivel": 1,
+			      "categoria": "Música"
+			    },
+			    {
+			      "pregunta": "¿Qué instrumento tiene teclas blancas y negras?",
+			      "opcionA": "Guitarra",
+			      "opcionB": "Piano",
+			      "opcionC": "Flauta",
+			      "opcionD": "Violín",
+			      "correcta": "B",
+			      "nivel": 1,
+			      "categoria": "Música"
+			    },
+			    {
+			      "pregunta": "¿Qué se utiliza para escribir música?",
+			      "opcionA": "Pentagrama",
+			      "opcionB": "Mapa",
+			      "opcionC": "Cuaderno de texto",
+			      "opcionD": "Lienzo",
+			      "correcta": "A",
+			      "nivel": 1,
+			      "categoria": "Música"
+			    },
+			    {
+			      "pregunta": "¿Qué instrumento tiene cuerdas?",
+			      "opcionA": "Trompeta",
+			      "opcionB": "Batería",
+			      "opcionC": "Guitarra",
+			      "opcionD": "Flauta",
+			      "correcta": "C",
+			      "nivel": 1,
+			      "categoria": "Música"
+			    },
+			    {
+			      "pregunta": "¿Qué es el ritmo en música?",
+			      "opcionA": "El color del sonido",
+			      "opcionB": "La velocidad y patrón del sonido",
+			      "opcionC": "El volumen",
+			      "opcionD": "El instrumento",
+			      "correcta": "B",
+			      "nivel": 1,
+			      "categoria": "Música"
+			    },
+				{
+				    "pregunta": "¿Cuántos jugadores hay en un equipo de fútbol en el campo?",
+				    "opcionA": "9",
+				    "opcionB": "10",
+				    "opcionC": "11",
+				    "opcionD": "12",
+				    "correcta": "C",
+				    "nivel": 1,
+				    "categoria": "Deportes"
+				  },
+				  {
+				    "pregunta": "¿Qué deporte se juega con un balón y una canasta?",
+				    "opcionA": "Fútbol",
+				    "opcionB": "Baloncesto",
+				    "opcionC": "Tenis",
+				    "opcionD": "Béisbol",
+				    "correcta": "B",
+				    "nivel": 1,
+				    "categoria": "Deportes"
+				  },
+				  {
+				    "pregunta": "¿Qué deporte usa una raqueta?",
+				    "opcionA": "Natación",
+				    "opcionB": "Atletismo",
+				    "opcionC": "Tenis",
+				    "opcionD": "Boxeo",
+				    "correcta": "C",
+				    "nivel": 1,
+				    "categoria": "Deportes"
+				  },
+				  {
+				    "pregunta": "¿Qué deporte se practica en el agua?",
+				    "opcionA": "Fútbol",
+				    "opcionB": "Natación",
+				    "opcionC": "Ciclismo",
+				    "opcionD": "Golf",
+				    "correcta": "B",
+				    "nivel": 1,
+				    "categoria": "Deportes"
+				  },
+				  {
+				    "pregunta": "¿Qué se usa para jugar al fútbol?",
+				    "opcionA": "Raqueta",
+				    "opcionB": "Balón",
+				    "opcionC": "Palo",
+				    "opcionD": "Guantes",
+				    "correcta": "B",
+				    "nivel": 1,
+				    "categoria": "Deportes"
+				  },
   {
-    "pregunta": "Que animal tiene mas longevidad?",
-    "opcionA": "Perro",
-    "opcionB": "Gato",
-    "opcionC": "Ballena",
-    "opcionD": "Caballo",
-    "correcta": "C",
-    "nivel": 1,
-    "categoria": "Animales"
-  },
+      "pregunta": "¿Cuál es el río más largo de Europa?",
+      "opcionA": "Danubio",
+      "opcionB": "Volga",
+      "opcionC": "Rin",
+      "opcionD": "Tajo",
+      "correcta": "B",
+      "nivel": 2,
+      "categoria": "Geografia"
+    },
+    {
+      "pregunta": "¿Qué país tiene la mayor cantidad de islas del mundo?",
+      "opcionA": "Indonesia",
+      "opcionB": "Filipinas",
+      "opcionC": "Suecia",
+      "opcionD": "Japón",
+      "correcta": "C",
+      "nivel": 2,
+      "categoria": "Geografia"
+    },
+    {
+      "pregunta": "¿Cuál es la capital de Canadá?",
+      "opcionA": "Toronto",
+      "opcionB": "Vancouver",
+      "opcionC": "Montreal",
+      "opcionD": "Ottawa",
+      "correcta": "D",
+      "nivel": 2,
+      "categoria": "Geografia"
+    },
+    {
+      "pregunta": "¿Cuál es la montaña más alta de América?",
+      "opcionA": "Aconcagua",
+      "opcionB": "Everest",
+      "opcionC": "Kilimanjaro",
+      "opcionD": "Mont Blanc",
+      "correcta": "A",
+      "nivel": 2,
+      "categoria": "Geografia"
+    },
+    {
+      "pregunta": "¿Qué país atraviesa tanto Europa como Asia?",
+      "opcionA": "Egipto",
+      "opcionB": "Turquía",
+      "opcionC": "India",
+      "opcionD": "Grecia",
+      "correcta": "B",
+      "nivel": 2,
+      "categoria": "Geografia"
+    },
+	{
+	    "pregunta": "¿Qué mide un termómetro?",
+	    "opcionA": "Presión",
+	    "opcionB": "Temperatura",
+	    "opcionC": "Fuerza",
+	    "opcionD": "Energía",
+	    "correcta": "B",
+	    "nivel": 2,
+	    "categoria": "Física"
+	  },
+	  {
+	    "pregunta": "¿Cuál es la unidad de medida de la fuerza en el Sistema Internacional?",
+	    "opcionA": "Pascal",
+	    "opcionB": "Newton",
+	    "opcionC": "Joule",
+	    "opcionD": "Watt",
+	    "correcta": "B",
+	    "nivel": 2,
+	    "categoria": "Física"
+	  },
+	  {
+	    "pregunta": "¿Qué tipo de energía tiene un objeto debido a su altura?",
+	    "opcionA": "Cinética",
+	    "opcionB": "Térmica",
+	    "opcionC": "Potencial",
+	    "opcionD": "Eléctrica",
+	    "correcta": "C",
+	    "nivel": 2,
+	    "categoria": "Física"
+	  },
+	  {
+	    "pregunta": "¿Qué instrumento se utiliza para medir la intensidad de la corriente eléctrica?",
+	    "opcionA": "Voltímetro",
+	    "opcionB": "Ohmímetro",
+	    "opcionC": "Amperímetro",
+	    "opcionD": "Barómetro",
+	    "correcta": "C",
+	    "nivel": 2,
+	    "categoria": "Física"
+	  },
+	  {
+	    "pregunta": "¿Qué estudia la cinemática?",
+	    "opcionA": "Las fuerzas",
+	    "opcionB": "El movimiento de los cuerpos",
+	    "opcionC": "La electricidad",
+	    "opcionD": "El calor",
+	    "correcta": "B",
+	    "nivel": 2,
+	    "categoria": "Física"
+	  },
+	  {
+	      "pregunta": "¿Cuál es el planeta más grande del Sistema Solar?",
+	      "opcionA": "Saturno",
+	      "opcionB": "Júpiter",
+	      "opcionC": "Neptuno",
+	      "opcionD": "Tierra",
+	      "correcta": "B",
+	      "nivel": 2,
+	      "categoria": "Astronomía"
+	    },
+	    {
+	      "pregunta": "¿Qué fuerza mantiene a los planetas en órbita?",
+	      "opcionA": "Magnetismo",
+	      "opcionB": "Gravedad",
+	      "opcionC": "Electricidad",
+	      "opcionD": "Fricción",
+	      "correcta": "B",
+	      "nivel": 2,
+	      "categoria": "Astronomía"
+	    },
+	    {
+	      "pregunta": "¿Cómo se llama la galaxia donde está la Tierra?",
+	      "opcionA": "Andrómeda",
+	      "opcionB": "Vía Láctea",
+	      "opcionC": "Sombrero",
+	      "opcionD": "Triángulo",
+	      "correcta": "B",
+	      "nivel": 2,
+	      "categoria": "Astronomía"
+	    },
+	    {
+	      "pregunta": "¿Qué es un cometa?",
+	      "opcionA": "Una estrella",
+	      "opcionB": "Un planeta",
+	      "opcionC": "Un objeto de hielo y polvo",
+	      "opcionD": "Un satélite",
+	      "correcta": "C",
+	      "nivel": 2,
+	      "categoria": "Astronomía"
+	    },
+	    {
+	      "pregunta": "¿Cuánto tarda la Tierra en dar una vuelta alrededor del Sol?",
+	      "opcionA": "1 mes",
+	      "opcionB": "1 día",
+	      "opcionC": "1 año",
+	      "opcionD": "10 años",
+	      "correcta": "C",
+	      "nivel": 2,
+	      "categoria": "Astronomía"
+	    },
+	  {
+	      "pregunta": "¿Quién pintó la Mona Lisa?",
+	      "opcionA": "Pablo Picasso",
+	      "opcionB": "Leonardo da Vinci",
+	      "opcionC": "Vincent van Gogh",
+	      "opcionD": "Miguel Ángel",
+	      "correcta": "B",
+	      "nivel": 2,
+	      "categoria": "Arte"
+	    },
+	    {
+	      "pregunta": "¿Qué estilo artístico pertenece a Picasso?",
+	      "opcionA": "Impresionismo",
+	      "opcionB": "Cubismo",
+	      "opcionC": "Barroco",
+	      "opcionD": "Renacimiento",
+	      "correcta": "B",
+	      "nivel": 2,
+	      "categoria": "Arte"
+	    },
+	    {
+	      "pregunta": "¿Qué artista pintó “La noche estrellada”?",
+	      "opcionA": "Van Gogh",
+	      "opcionB": "Dalí",
+	      "opcionC": "Rembrandt",
+	      "opcionD": "Goya",
+	      "correcta": "A",
+	      "nivel": 2,
+	      "categoria": "Arte"
+	    },
+	    {
+	      "pregunta": "¿Qué es el Louvre?",
+	      "opcionA": "Un museo",
+	      "opcionB": "Una pintura",
+	      "opcionC": "Un estilo artístico",
+	      "opcionD": "Un escultor",
+	      "correcta": "A",
+	      "nivel": 2,
+	      "categoria": "Arte"
+	    },
+	    {
+	      "pregunta": "¿Qué técnica usa pequeñas piezas de vidrio o piedra?",
+	      "opcionA": "Óleo",
+	      "opcionB": "Fresco",
+	      "opcionC": "Mosaico",
+	      "opcionD": "Acuarela",
+	      "correcta": "C",
+	      "nivel": 2,
+	      "categoria": "Arte"
+	    },
+	  {
+	      "pregunta": "¿Cuál es la unidad básica de los seres vivos?",
+	      "opcionA": "Órgano",
+	      "opcionB": "Tejido",
+	      "opcionC": "Célula",
+	      "opcionD": "Sistema",
+	      "correcta": "C",
+	      "nivel": 2,
+	      "categoria": "Biología"
+	    },
+	    {
+	      "pregunta": "¿Qué gas liberan las plantas en la fotosíntesis?",
+	      "opcionA": "Oxígeno",
+	      "opcionB": "Dióxido de carbono",
+	      "opcionC": "Nitrógeno",
+	      "opcionD": "Helio",
+	      "correcta": "A",
+	      "nivel": 2,
+	      "categoria": "Biología"
+	    },
+	    {
+	      "pregunta": "¿Dónde ocurre la digestión principalmente?",
+	      "opcionA": "Pulmones",
+	      "opcionB": "Estómago",
+	      "opcionC": "Corazón",
+	      "opcionD": "Cerebro",
+	      "correcta": "B",
+	      "nivel": 2,
+	      "categoria": "Biología"
+	    },
+	    {
+	      "pregunta": "¿Qué sistema permite el movimiento del cuerpo?",
+	      "opcionA": "Digestivo",
+	      "opcionB": "Nervioso",
+	      "opcionC": "Muscular",
+	      "opcionD": "Respiratorio",
+	      "correcta": "C",
+	      "nivel": 2,
+	      "categoria": "Biología"
+	    },
+	    {
+	      "pregunta": "¿Qué transporta el oxígeno en la sangre?",
+	      "opcionA": "Plaquetas",
+	      "opcionB": "Glóbulos rojos",
+	      "opcionC": "Glóbulos blancos",
+	      "opcionD": "Plasma",
+	      "correcta": "B",
+	      "nivel": 2,
+	      "categoria": "Biología"
+	    },
+		{
+		    "pregunta": "¿Cuántos elementos tiene la tabla periódica aproximadamente?",
+		    "opcionA": "50",
+		    "opcionB": "100",
+		    "opcionC": "118",
+		    "opcionD": "200",
+		    "correcta": "C",
+		    "nivel": 2,
+		    "categoria": "Química"
+		  },
+		  {
+		    "pregunta": "¿Qué tipo de enlace comparte electrones?",
+		    "opcionA": "Iónico",
+		    "opcionB": "Covalente",
+		    "opcionC": "Metálico",
+		    "opcionD": "Físico",
+		    "correcta": "B",
+		    "nivel": 2,
+		    "categoria": "Química"
+		  },
+		  {
+		    "pregunta": "¿Qué pH es considerado neutro?",
+		    "opcionA": "0",
+		    "opcionB": "7",
+		    "opcionC": "14",
+		    "opcionD": "1",
+		    "correcta": "B",
+		    "nivel": 2,
+		    "categoria": "Química"
+		  },
+		  {
+		    "pregunta": "¿Qué gas producen las plantas en la fotosíntesis?",
+		    "opcionA": "Oxígeno",
+		    "opcionB": "Nitrógeno",
+		    "opcionC": "CO2",
+		    "opcionD": "Helio",
+		    "correcta": "A",
+		    "nivel": 2,
+		    "categoria": "Química"
+		  },
+		  {
+		    "pregunta": "¿Cuál es el símbolo del hierro?",
+		    "opcionA": "Ir",
+		    "opcionB": "Fe",
+		    "opcionC": "H",
+		    "opcionD": "Au",
+		    "correcta": "B",
+		    "nivel": 2,
+		    "categoria": "Química"
+		  },
+		  {
+		      "pregunta": "¿En qué año comenzó la Segunda Guerra Mundial?",
+		      "opcionA": "1914",
+		      "opcionB": "1939",
+		      "opcionC": "1945",
+		      "opcionD": "1920",
+		      "correcta": "B",
+		      "nivel": 2,
+		      "categoria": "Historia"
+		    },
+		    {
+		      "pregunta": "¿Quién fue conocido como el Libertador de América del Sur?",
+		      "opcionA": "Simón Bolívar",
+		      "opcionB": "Napoleón",
+		      "opcionC": "George Washington",
+		      "opcionD": "Che Guevara",
+		      "correcta": "A",
+		      "nivel": 2,
+		      "categoria": "Historia"
+		    },
+		    {
+		      "pregunta": "¿Qué imperio construyó el Coliseo?",
+		      "opcionA": "Imperio Egipcio",
+		      "opcionB": "Imperio Romano",
+		      "opcionC": "Imperio Griego",
+		      "opcionD": "Imperio Persa",
+		      "correcta": "B",
+		      "nivel": 2,
+		      "categoria": "Historia"
+		    },
+		    {
+		      "pregunta": "¿Qué guerra enfrentó a las colonias americanas contra Gran Bretaña?",
+		      "opcionA": "Guerra Civil",
+		      "opcionB": "Guerra Fría",
+		      "opcionC": "Guerra de Independencia de EE.UU.",
+		      "opcionD": "Primera Guerra Mundial",
+		      "correcta": "C",
+		      "nivel": 2,
+		      "categoria": "Historia"
+		    },
+		    {
+		      "pregunta": "¿En qué ciudad fue asesinado Julio César?",
+		      "opcionA": "Atenas",
+		      "opcionB": "Roma",
+		      "opcionC": "Cartago",
+		      "opcionD": "Alejandría",
+		      "correcta": "B",
+		      "nivel": 2,
+		      "categoria": "Historia"
+		    },
+			{
+			    "pregunta": "¿Quién escribió Cien años de soledad?",
+			    "opcionA": "Mario Vargas Llosa",
+			    "opcionB": "Gabriel García Márquez",
+			    "opcionC": "Pablo Neruda",
+			    "opcionD": "Octavio Paz",
+			    "correcta": "B",
+			    "nivel": 2,
+			    "categoria": "Literatura"
+			  },
+			  {
+			    "pregunta": "¿Qué es la métrica en poesía?",
+			    "opcionA": "El color de las palabras",
+			    "opcionB": "El ritmo y medida de los versos",
+			    "opcionC": "El tema del poema",
+			    "opcionD": "El autor del poema",
+			    "correcta": "B",
+			    "nivel": 2,
+			    "categoria": "Literatura"
+			  },
+			  {
+			    "pregunta": "¿Qué obra pertenece a Shakespeare?",
+			    "opcionA": "La Odisea",
+			    "opcionB": "Hamlet",
+			    "opcionC": "La Ilíada",
+			    "opcionD": "El Aleph",
+			    "correcta": "B",
+			    "nivel": 2,
+			    "categoria": "Literatura"
+			  },
+			  {
+			    "pregunta": "¿Qué es una metáfora?",
+			    "opcionA": "Una exageración",
+			    "opcionB": "Una comparación sin 'como'",
+			    "opcionC": "Un tipo de novela",
+			    "opcionD": "Un diálogo teatral",
+			    "correcta": "B",
+			    "nivel": 2,
+			    "categoria": "Literatura"
+			  },
+			  {
+			    "pregunta": "¿Qué género literario expresa sentimientos?",
+			    "opcionA": "Narrativo",
+			    "opcionB": "Dramático",
+			    "opcionC": "Lírico",
+			    "opcionD": "Ensayístico",
+			    "correcta": "C",
+			    "nivel": 2,
+			    "categoria": "Literatura"
+			  },
+			  {
+			      "pregunta": "¿Qué es un sistema operativo?",
+			      "opcionA": "Un hardware",
+			      "opcionB": "Un programa que gestiona el ordenador",
+			      "opcionC": "Un archivo de texto",
+			      "opcionD": "Un navegador web",
+			      "correcta": "B",
+			      "nivel": 2,
+			      "categoria": "Informática"
+			    },
+			    {
+			      "pregunta": "¿Cuál es un navegador web?",
+			      "opcionA": "Windows",
+			      "opcionB": "Google Chrome",
+			      "opcionC": "Word",
+			      "opcionD": "Excel",
+			      "correcta": "B",
+			      "nivel": 2,
+			      "categoria": "Informática"
+			    },
+			    {
+			      "pregunta": "¿Qué significa CPU?",
+			      "opcionA": "Central Processing Unit",
+			      "opcionB": "Computer Personal Unit",
+			      "opcionC": "Control Program Utility",
+			      "opcionD": "Central Print Unit",
+			      "correcta": "A",
+			      "nivel": 2,
+			      "categoria": "Informática"
+			    },
+			    {
+			      "pregunta": "¿Qué es un virus informático?",
+			      "opcionA": "Un programa malicioso",
+			      "opcionB": "Un hardware",
+			      "opcionC": "Un sistema operativo",
+			      "opcionD": "Un archivo de texto",
+			      "correcta": "A",
+			      "nivel": 2,
+			      "categoria": "Informática"
+			    },
+			    {
+			      "pregunta": "¿Qué tipo de memoria es la RAM?",
+			      "opcionA": "Almacenamiento permanente",
+			      "opcionB": "Memoria temporal",
+			      "opcionC": "Disco duro",
+			      "opcionD": "Procesador",
+			      "correcta": "B",
+			      "nivel": 2,
+			      "categoria": "Informática"
+			    },
+				{
+				    "pregunta": "¿Qué instrumento pertenece a la familia de viento?",
+				    "opcionA": "Violín",
+				    "opcionB": "Trompeta",
+				    "opcionC": "Guitarra",
+				    "opcionD": "Piano",
+				    "correcta": "B",
+				    "nivel": 2,
+				    "categoria": "Música"
+				  },
+				  {
+				    "pregunta": "¿Qué es una partitura?",
+				    "opcionA": "Un tipo de instrumento",
+				    "opcionB": "Un conjunto de notas escritas",
+				    "opcionC": "Un cantante",
+				    "opcionD": "Un ritmo",
+				    "correcta": "B",
+				    "nivel": 2,
+				    "categoria": "Música"
+				  },
+				  {
+				    "pregunta": "¿Quién es conocido como el compositor de la Quinta Sinfonía?",
+				    "opcionA": "Mozart",
+				    "opcionB": "Beethoven",
+				    "opcionC": "Bach",
+				    "opcionD": "Vivaldi",
+				    "correcta": "B",
+				    "nivel": 2,
+				    "categoria": "Música"
+				  },
+				  {
+				    "pregunta": "¿Qué es un acorde?",
+				    "opcionA": "Una sola nota",
+				    "opcionB": "Un conjunto de notas tocadas a la vez",
+				    "opcionC": "Un ritmo rápido",
+				    "opcionD": "Un instrumento",
+				    "correcta": "B",
+				    "nivel": 2,
+				    "categoria": "Música"
+				  },
+				  {
+				    "pregunta": "¿Qué instrumento es típico en una batería?",
+				    "opcionA": "Piano",
+				    "opcionB": "Timbales",
+				    "opcionC": "Violín",
+				    "opcionD": "Saxofón",
+				    "correcta": "B",
+				    "nivel": 2,
+				    "categoria": "Música"
+				  },
+				  {
+				      "pregunta": "¿Cuánto dura un partido de fútbol profesional sin prórroga?",
+				      "opcionA": "60 minutos",
+				      "opcionB": "90 minutos",
+				      "opcionC": "120 minutos",
+				      "opcionD": "80 minutos",
+				      "correcta": "B",
+				      "nivel": 2,
+				      "categoria": "Deportes"
+				    },
+				    {
+				      "pregunta": "¿Qué país ganó más Mundiales de fútbol?",
+				      "opcionA": "Alemania",
+				      "opcionB": "Argentina",
+				      "opcionC": "Brasil",
+				      "opcionD": "Italia",
+				      "correcta": "C",
+				      "nivel": 2,
+				      "categoria": "Deportes"
+				    },
+				    {
+				      "pregunta": "¿En qué deporte se usa un ring?",
+				      "opcionA": "Judo",
+				      "opcionB": "Boxeo",
+				      "opcionC": "Fútbol",
+				      "opcionD": "Tenis",
+				      "correcta": "B",
+				      "nivel": 2,
+				      "categoria": "Deportes"
+				    },
+				    {
+				      "pregunta": "¿Cuántos jugadores tiene un equipo de baloncesto en cancha?",
+				      "opcionA": "4",
+				      "opcionB": "5",
+				      "opcionC": "6",
+				      "opcionD": "7",
+				      "correcta": "B",
+				      "nivel": 2,
+				      "categoria": "Deportes"
+				    },
+				    {
+				      "pregunta": "¿Qué deporte utiliza un “home run”?",
+				      "opcionA": "Cricket",
+				      "opcionB": "Béisbol",
+				      "opcionC": "Golf",
+				      "opcionD": "Tenis",
+				      "correcta": "B",
+				      "nivel": 2,
+				      "categoria": "Deportes"
+				    },
   {
+<<<<<<< HEAD
     "pregunta": "Cual es el presidente actual Español?",
     "opcionA": "Pedro Sanchez",
     "opcionB": "Mariano Rajoy",
@@ -514,4 +1446,600 @@
     "nivel": 3,
     "categoria": "Historia"
   }
+=======
+      "pregunta": "¿Qué país tiene frontera con más países en el mundo?",
+      "opcionA": "China",
+      "opcionB": "Rusia",
+      "opcionC": "Brasil",
+      "opcionD": "India",
+      "correcta": "A",
+      "nivel": 3,
+      "categoria": "Geografia"
+    },
+    {
+      "pregunta": "¿Cuál es la capital más alta del mundo?",
+      "opcionA": "Quito",
+      "opcionB": "La Paz",
+      "opcionC": "Bogotá",
+      "opcionD": "Katmandú",
+      "correcta": "B",
+      "nivel": 3,
+      "categoria": "Geografia"
+    },
+    {
+      "pregunta": "¿Qué estrecho separa Asia de América?",
+      "opcionA": "Gibraltar",
+      "opcionB": "Bering",
+      "opcionC": "Magallanes",
+      "opcionD": "Ormuz",
+      "correcta": "B",
+      "nivel": 3,
+      "categoria": "Geografia"
+    },
+    {
+      "pregunta": "¿Cuál es el lago más profundo del mundo?",
+      "opcionA": "Superior",
+      "opcionB": "Victoria",
+      "opcionC": "Baikal",
+      "opcionD": "Titicaca",
+      "correcta": "C",
+      "nivel": 3,
+      "categoria": "Geografia"
+    },
+    {
+      "pregunta": "¿Qué país africano tiene más población?",
+      "opcionA": "Egipto",
+      "opcionB": "Sudáfrica",
+      "opcionC": "Nigeria",
+      "opcionD": "Etiopía",
+      "correcta": "C",
+      "nivel": 3,
+      "categoria": "Geografia"
+    },
+	{
+	    "pregunta": "¿Quién formuló las leyes del movimiento?",
+	    "opcionA": "Albert Einstein",
+	    "opcionB": "Isaac Newton",
+	    "opcionC": "Galileo Galilei",
+	    "opcionD": "Nikola Tesla",
+	    "correcta": "B",
+	    "nivel": 3,
+	    "categoria": "Física"
+	  },
+	  {
+	    "pregunta": "¿Cuál es la unidad de resistencia eléctrica?",
+	    "opcionA": "Voltio",
+	    "opcionB": "Ohmio",
+	    "opcionC": "Amperio",
+	    "opcionD": "Vatio",
+	    "correcta": "B",
+	    "nivel": 3,
+	    "categoria": "Física"
+	  },
+	  {
+	    "pregunta": "¿Qué fenómeno explica la desviación de la luz al pasar de un medio a otro?",
+	    "opcionA": "Difracción",
+	    "opcionB": "Reflexión",
+	    "opcionC": "Refracción",
+	    "opcionD": "Polarización",
+	    "correcta": "C",
+	    "nivel": 3,
+	    "categoria": "Física"
+	  },
+	  {
+	    "pregunta": "¿Qué científico desarrolló la teoría de la relatividad?",
+	    "opcionA": "Stephen Hawking",
+	    "opcionB": "Isaac Newton",
+	    "opcionC": "Niels Bohr",
+	    "opcionD": "Albert Einstein",
+	    "correcta": "D",
+	    "nivel": 3,
+	    "categoria": "Física"
+	  },
+	  {
+	    "pregunta": "¿Qué ley establece que la energía no se crea ni se destruye, solo se transforma?",
+	    "opcionA": "Ley de Coulomb",
+	    "opcionB": "Ley de Ohm",
+	    "opcionC": "Principio de Arquímedes",
+	    "opcionD": "Ley de conservación de la energía",
+	    "correcta": "D",
+	    "nivel": 3,
+	    "categoria": "Física"
+	  },
+	  {
+	      "pregunta": "¿Cómo se llama el estudio de las estrellas y el universo?",
+	      "opcionA": "Geología",
+	      "opcionB": "Astronomía",
+	      "opcionC": "Biología",
+	      "opcionD": "Física nuclear",
+	      "correcta": "B",
+	      "nivel": 3,
+	      "pista": "Empieza por A",
+	      "categoria": "Astronomía"
+	    },
+	    {
+	      "pregunta": "¿Qué fenómeno ocurre cuando la luz no puede escapar de un objeto en el espacio?",
+	      "opcionA": "Supernova",
+	      "opcionB": "Nebulosa",
+	      "opcionC": "Agujero negro",
+	      "opcionD": "Cometa",
+	      "correcta": "C",
+	      "nivel": 3,
+	      "pista": "Empieza por A",
+	      "categoria": "Astronomía"
+	    },
+	    {
+	      "pregunta": "¿Qué nombre reciben las estrellas que explotan al final de su vida?",
+	      "opcionA": "Púlsares",
+	      "opcionB": "Supernovas",
+	      "opcionC": "Enanas blancas",
+	      "opcionD": "Cometas",
+	      "correcta": "B",
+	      "nivel": 3,
+	      "pista": "Empieza por S",
+	      "categoria": "Astronomía"
+	    },
+	    {
+	      "pregunta": "¿Qué unidad se usa para medir distancias en el espacio?",
+	      "opcionA": "Kilómetro",
+	      "opcionB": "Año luz",
+	      "opcionC": "Metro",
+	      "opcionD": "Milla",
+	      "correcta": "B",
+	      "nivel": 3,
+	      "pista": "Empieza por A",
+	      "categoria": "Astronomía"
+	    },
+	    {
+	      "pregunta": "¿Cómo se llama la teoría sobre el origen del universo?",
+	      "opcionA": "Relatividad",
+	      "opcionB": "Big Bang",
+	      "opcionC": "Evolución",
+	      "opcionD": "Gravedad cuántica",
+	      "correcta": "B",
+	      "nivel": 3,
+	      "pista": "Empieza por B",
+	      "categoria": "Astronomía"
+	    },
+	  {
+	      "pregunta": "¿Quién pintó “El Guernica”?",
+	      "opcionA": "Dalí",
+	      "opcionB": "Velázquez",
+	      "opcionC": "Picasso",
+	      "opcionD": "Goya",
+	      "correcta": "C",
+	      "nivel": 3,
+	      "pista": "Empieza por P",
+	      "categoria": "Arte"
+	    },
+	    {
+	      "pregunta": "¿Qué movimiento artístico se caracteriza por la deformación de la realidad y los sueños?",
+	      "opcionA": "Realismo",
+	      "opcionB": "Surrealismo",
+	      "opcionC": "Barroco",
+	      "opcionD": "Neoclasicismo",
+	      "correcta": "B",
+	      "nivel": 3,
+	      "pista": "Empieza por S",
+	      "categoria": "Arte"
+	    },
+	    {
+	      "pregunta": "¿Qué pintor es famoso por cortar su propia oreja?",
+	      "opcionA": "Van Gogh",
+	      "opcionB": "Da Vinci",
+	      "opcionC": "Monet",
+	      "opcionD": "Picasso",
+	      "correcta": "A",
+	      "nivel": 3,
+	      "pista": "Empieza por V",
+	      "categoria": "Arte"
+	    },
+	    {
+	      "pregunta": "¿Qué técnica consiste en pintar sobre yeso fresco?",
+	      "opcionA": "Óleo",
+	      "opcionB": "Fresco",
+	      "opcionC": "Acrílico",
+	      "opcionD": "Grabado",
+	      "correcta": "B",
+	      "nivel": 3,
+	      "pista": "Empieza por F",
+	      "categoria": "Arte"
+	    },
+	    {
+	      "pregunta": "¿Qué artista es conocido por las obras “La persistencia de la memoria”?",
+	      "opcionA": "Dalí",
+	      "opcionB": "Picasso",
+	      "opcionC": "Goya",
+	      "opcionD": "Kahlo",
+	      "correcta": "A",
+	      "nivel": 3,
+	      "pista": "Empieza por D",
+	      "categoria": "Arte"
+	    },
+	  {
+	      "pregunta": "¿Qué molécula contiene la información genética?",
+	      "opcionA": "ARN",
+	      "opcionB": "ADN",
+	      "opcionC": "Proteína",
+	      "opcionD": "Glucosa",
+	      "correcta": "B",
+	      "nivel": 3,
+	      "pista": "Empieza por A",
+	      "categoria": "Biología"
+	    },
+	    {
+	      "pregunta": "¿Cómo se llama la división celular que produce células idénticas?",
+	      "opcionA": "Meiosis",
+	      "opcionB": "Mitosis",
+	      "opcionC": "Fecundación",
+	      "opcionD": "Clonación",
+	      "correcta": "B",
+	      "nivel": 3,
+	      "pista": "Empieza por M",
+	      "categoria": "Biología"
+	    },
+	    {
+	      "pregunta": "¿Qué órgano controla el sistema nervioso?",
+	      "opcionA": "Corazón",
+	      "opcionB": "Pulmones",
+	      "opcionC": "Cerebro",
+	      "opcionD": "Hígado",
+	      "correcta": "C",
+	      "nivel": 3,
+	      "pista": "Empieza por C",
+	      "categoria": "Biología"
+	    },
+	    {
+	      "pregunta": "¿Cómo se llama la unidad funcional del riñón?",
+	      "opcionA": "Neuronas",
+	      "opcionB": "Nefrona",
+	      "opcionC": "Alvéolo",
+	      "opcionD": "Axón",
+	      "correcta": "B",
+	      "nivel": 3,
+	      "pista": "Empieza por N",
+	      "categoria": "Biología"
+	    },
+	    {
+	      "pregunta": "¿Qué proceso convierte nutrientes en energía en las células?",
+	      "opcionA": "Fotosíntesis",
+	      "opcionB": "Respiración celular",
+	      "opcionC": "Digestión",
+	      "opcionD": "Fermentación",
+	      "correcta": "B",
+	      "nivel": 3,
+	      "pista": "Empieza por R",
+	      "categoria": "Biología"
+	    },
+		{
+		    "pregunta": "¿Qué ciencia estudia la composición de la materia?",
+		    "opcionA": "Biología",
+		    "opcionB": "Física",
+		    "opcionC": "Química",
+		    "opcionD": "Geología",
+		    "correcta": "C",
+		    "nivel": 3,
+		    "pista": "Empieza por Q",
+		    "categoria": "Química"
+		  },
+		  {
+		    "pregunta": "¿Cómo se llama el modelo que describe electrones en niveles de energía?",
+		    "opcionA": "Modelo atómico de Bohr",
+		    "opcionB": "Modelo de Newton",
+		    "opcionC": "Modelo celular",
+		    "opcionD": "Modelo cuántico clásico",
+		    "correcta": "A",
+		    "nivel": 3,
+		    "pista": "Empieza por B",
+		    "categoria": "Química"
+		  },
+		  {
+		    "pregunta": "¿Qué partícula tiene carga negativa en el átomo?",
+		    "opcionA": "Protón",
+		    "opcionB": "Neutrón",
+		    "opcionC": "Electrón",
+		    "opcionD": "Núcleo",
+		    "correcta": "C",
+		    "nivel": 3,
+		    "pista": "Empieza por E",
+		    "categoria": "Química"
+		  },
+		  {
+		    "pregunta": "¿Qué proceso separa mezclas mediante evaporación y condensación?",
+		    "opcionA": "Filtración",
+		    "opcionB": "Destilación",
+		    "opcionC": "Decantación",
+		    "opcionD": "Sublimación",
+		    "correcta": "B",
+		    "nivel": 3,
+		    "pista": "Empieza por D",
+		    "categoria": "Química"
+		  },
+		  {
+		    "pregunta": "¿Qué número indica la cantidad de protones en un átomo?",
+		    "opcionA": "Masa atómica",
+		    "opcionB": "Número atómico",
+		    "opcionC": "Valencia",
+		    "opcionD": "Isótopo",
+		    "correcta": "B",
+		    "nivel": 3,
+		    "pista": "Empieza por N",
+		    "categoria": "Química"
+		  },
+		  {
+		      "pregunta": "¿Qué conflicto dividió el mundo en bloques capitalista y comunista?",
+		      "opcionA": "Primera Guerra Mundial",
+		      "opcionB": "Guerra Fría",
+		      "opcionC": "Guerra Civil Española",
+		      "opcionD": "Guerra de Vietnam",
+		      "correcta": "B",
+		      "nivel": 3,
+		      "pista": "Empieza por G",
+		      "categoria": "Historia"
+		    },
+		    {
+		      "pregunta": "¿Qué tratado puso fin a la Primera Guerra Mundial?",
+		      "opcionA": "Tratado de París",
+		      "opcionB": "Tratado de Versalles",
+		      "opcionC": "Tratado de Viena",
+		      "opcionD": "Tratado de Roma",
+		      "correcta": "B",
+		      "nivel": 3,
+		      "pista": "Empieza por V",
+		      "categoria": "Historia"
+		    },
+		    {
+		      "pregunta": "¿Qué imperio fue gobernado por los faraones?",
+		      "opcionA": "Imperio Romano",
+		      "opcionB": "Imperio Egipcio",
+		      "opcionC": "Imperio Persa",
+		      "opcionD": "Imperio Bizantino",
+		      "correcta": "B",
+		      "nivel": 3,
+		      "pista": "Empieza por E",
+		      "categoria": "Historia"
+		    },
+		    {
+		      "pregunta": "¿Qué revolución comenzó en 1789?",
+		      "opcionA": "Revolución Industrial",
+		      "opcionB": "Revolución Francesa",
+		      "opcionC": "Revolución Rusa",
+		      "opcionD": "Revolución Americana",
+		      "correcta": "B",
+		      "nivel": 3,
+		      "pista": "Empieza por F",
+		      "categoria": "Historia"
+		    },
+		    {
+		      "pregunta": "¿Qué líder alemán inició la Segunda Guerra Mundial?",
+		      "opcionA": "Stalin",
+		      "opcionB": "Churchill",
+		      "opcionC": "Hitler",
+		      "opcionD": "Mussolini",
+		      "correcta": "C",
+		      "nivel": 3,
+		      "pista": "Empieza por H",
+		      "categoria": "Historia"
+		    },
+			{
+			    "pregunta": "¿Quién escribió La Divina Comedia?",
+			    "opcionA": "Dante Alighieri",
+			    "opcionB": "Homero",
+			    "opcionC": "Virgilio",
+			    "opcionD": "Cervantes",
+			    "correcta": "A",
+			    "nivel": 3,
+			    "pista": "Empieza por D",
+			    "categoria": "Literatura"
+			  },
+			  {
+			    "pregunta": "¿Qué recurso literario consiste en repetir sonidos?",
+			    "opcionA": "Metáfora",
+			    "opcionB": "Aliteración",
+			    "opcionC": "Hipérbole",
+			    "opcionD": "Ironía",
+			    "correcta": "B",
+			    "nivel": 3,
+			    "pista": "Empieza por A",
+			    "categoria": "Literatura"
+			  },
+			  {
+			    "pregunta": "¿Quién escribió La Odisea?",
+			    "opcionA": "Homero",
+			    "opcionB": "Sófocles",
+			    "opcionC": "Platón",
+			    "opcionD": "Aristóteles",
+			    "correcta": "A",
+			    "nivel": 3,
+			    "pista": "Empieza por H",
+			    "categoria": "Literatura"
+			  },
+			  {
+			    "pregunta": "¿Qué es una hipérbole?",
+			    "opcionA": "Una comparación",
+			    "opcionB": "Una exageración",
+			    "opcionC": "Un diálogo",
+			    "opcionD": "Una narración",
+			    "correcta": "B",
+			    "nivel": 3,
+			    "pista": "Empieza por H",
+			    "categoria": "Literatura"
+			  },
+			  {
+			    "pregunta": "¿Qué obra pertenece a la literatura fantástica moderna?",
+			    "opcionA": "El Quijote",
+			    "opcionB": "Harry Potter",
+			    "opcionC": "La Eneida",
+			    "opcionD": "La Ilíada",
+			    "correcta": "B",
+			    "nivel": 3,
+			    "pista": "Empieza por H",
+			    "categoria": "Literatura"
+			  },
+			  {
+			      "pregunta": "¿Qué lenguaje se usa principalmente para crear páginas web estructuradas?",
+			      "opcionA": "Python",
+			      "opcionB": "HTML",
+			      "opcionC": "Java",
+			      "opcionD": "C++",
+			      "correcta": "B",
+			      "nivel": 3,
+			      "pista": "Empieza por H",
+			      "categoria": "Informática"
+			    },
+			    {
+			      "pregunta": "¿Qué sistema operativo es desarrollado por Microsoft?",
+			      "opcionA": "Linux",
+			      "opcionB": "Windows",
+			      "opcionC": "Android",
+			      "opcionD": "MacOS",
+			      "correcta": "B",
+			      "nivel": 3,
+			      "pista": "Empieza por W",
+			      "categoria": "Informática"
+			    },
+			    {
+			      "pregunta": "¿Qué lenguaje es muy usado para inteligencia artificial?",
+			      "opcionA": "Python",
+			      "opcionB": "HTML",
+			      "opcionC": "CSS",
+			      "opcionD": "SQL",
+			      "correcta": "A",
+			      "nivel": 3,
+			      "pista": "Empieza por P",
+			      "categoria": "Informática"
+			    },
+			    {
+			      "pregunta": "¿Qué base de datos es NoSQL?",
+			      "opcionA": "MySQL",
+			      "opcionB": "PostgreSQL",
+			      "opcionC": "MongoDB",
+			      "opcionD": "Oracle",
+			      "correcta": "C",
+			      "nivel": 3,
+			      "pista": "Empieza por M",
+			      "categoria": "Informática"
+			    },
+			    {
+			      "pregunta": "¿Qué protocolo se usa para navegar por internet?",
+			      "opcionA": "FTP",
+			      "opcionB": "HTTP",
+			      "opcionC": "SMTP",
+			      "opcionD": "SSH",
+			      "correcta": "B",
+			      "nivel": 3,
+			      "pista": "Empieza por H",
+			      "categoria": "Informática"
+			    },
+				{
+				    "pregunta": "¿Quién compuso Las Cuatro Estaciones?",
+				    "opcionA": "Bach",
+				    "opcionB": "Vivaldi",
+				    "opcionC": "Mozart",
+				    "opcionD": "Beethoven",
+				    "correcta": "B",
+				    "nivel": 3,
+				    "pista": "Empieza por V",
+				    "categoria": "Música"
+				  },
+				  {
+				    "pregunta": "¿Qué término describe la rapidez de una pieza musical?",
+				    "opcionA": "Timbre",
+				    "opcionB": "Tempo",
+				    "opcionC": "Armonía",
+				    "opcionD": "Melodía",
+				    "correcta": "B",
+				    "nivel": 3,
+				    "pista": "Empieza por T",
+				    "categoria": "Música"
+				  },
+				  {
+				    "pregunta": "¿Qué compositor alemán es famoso por la Novena Sinfonía?",
+				    "opcionA": "Mozart",
+				    "opcionB": "Beethoven",
+				    "opcionC": "Schubert",
+				    "opcionD": "Wagner",
+				    "correcta": "B",
+				    "nivel": 3,
+				    "pista": "Empieza por B",
+				    "categoria": "Música"
+				  },
+				  {
+				    "pregunta": "¿Qué es la armonía en música?",
+				    "opcionA": "Una sola nota",
+				    "opcionB": "La combinación de sonidos simultáneos",
+				    "opcionC": "El volumen",
+				    "opcionD": "El instrumento principal",
+				    "correcta": "B",
+				    "nivel": 3,
+				    "pista": "Empieza por H",
+				    "categoria": "Música"
+				  },
+				  {
+				    "pregunta": "¿Qué instrumento es característico del jazz?",
+				    "opcionA": "Saxofón",
+				    "opcionB": "Violín",
+				    "opcionC": "Piano clásico",
+				    "opcionD": "Flauta dulce",
+				    "correcta": "A",
+				    "nivel": 3,
+				    "pista": "Empieza por S",
+				    "categoria": "Música"
+				  },
+				  {
+				      "pregunta": "¿Cómo se llama el torneo internacional de fútbol más importante?",
+				      "opcionA": "Eurocopa",
+				      "opcionB": "Champions League",
+				      "opcionC": "Mundial",
+				      "opcionD": "Copa América",
+				      "correcta": "C",
+				      "nivel": 3,
+				      "pista": "Empieza por M",
+				      "categoria": "Deportes"
+				    },
+				    {
+				      "pregunta": "¿Qué atleta es conocido como el más rápido del mundo?",
+				      "opcionA": "Usain Bolt",
+				      "opcionB": "Carl Lewis",
+				      "opcionC": "Mo Farah",
+				      "opcionD": "Michael Phelps",
+				      "correcta": "A",
+				      "nivel": 3,
+				      "pista": "Empieza por U",
+				      "categoria": "Deportes"
+				    },
+				    {
+				      "pregunta": "¿En qué deporte se usa una red llamada 'cancha' en voleibol?",
+				      "opcionA": "Baloncesto",
+				      "opcionB": "Tenis",
+				      "opcionC": "Voleibol",
+				      "opcionD": "Bádminton",
+				      "correcta": "C",
+				      "nivel": 3,
+				      "pista": "Empieza por V",
+				      "categoria": "Deportes"
+				    },
+				    {
+				      "pregunta": "¿Cuántos anillos olímpicos hay?",
+				      "opcionA": "4",
+				      "opcionB": "5",
+				      "opcionC": "6",
+				      "opcionD": "7",
+				      "correcta": "B",
+				      "nivel": 3,
+				      "pista": "Empieza por C",
+				      "categoria": "Deportes"
+				    },
+				    {
+				      "pregunta": "¿Qué deporte combina natación, ciclismo y carrera?",
+				      "opcionA": "Maratón",
+				      "opcionB": "Triatlón",
+				      "opcionC": "Decatlón",
+				      "opcionD": "Pentatlón",
+				      "correcta": "B",
+				      "nivel": 3,
+				      "pista": "Empieza por T",
+				      "categoria": "Deportes"
+				    }
+>>>>>>> branch 'master' of https://github.com/PaulaNunezRamos/ProyectoIntermodular_Concursillo.git
 ]
