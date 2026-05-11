@@ -257,6 +257,56 @@
     "categoria": "Deportes"
   },
   {
+      "pregunta": "¿Cuál es el río más largo de Europa?",
+      "opcionA": "Danubio",
+      "opcionB": "Volga",
+      "opcionC": "Rin",
+      "opcionD": "Tajo",
+      "correcta": "B",
+      "nivel": 2,
+      "categoria": "Geografia"
+    },
+    {
+      "pregunta": "¿Qué país tiene la mayor cantidad de islas del mundo?",
+      "opcionA": "Indonesia",
+      "opcionB": "Filipinas",
+      "opcionC": "Suecia",
+      "opcionD": "Japón",
+      "correcta": "C",
+      "nivel": 2,
+      "categoria": "Geografia"
+    },
+    {
+      "pregunta": "¿Cuál es la capital de Canadá?",
+      "opcionA": "Toronto",
+      "opcionB": "Vancouver",
+      "opcionC": "Montreal",
+      "opcionD": "Ottawa",
+      "correcta": "D",
+      "nivel": 2,
+      "categoria": "Geografia"
+    },
+    {
+      "pregunta": "¿Cuál es la montaña más alta de América?",
+      "opcionA": "Aconcagua",
+      "opcionB": "Everest",
+      "opcionC": "Kilimanjaro",
+      "opcionD": "Mont Blanc",
+      "correcta": "A",
+      "nivel": 2,
+      "categoria": "Geografia"
+    },
+    {
+      "pregunta": "¿Qué país atraviesa tanto Europa como Asia?",
+      "opcionA": "Egipto",
+      "opcionB": "Turquía",
+      "opcionC": "India",
+      "opcionD": "Grecia",
+      "correcta": "B",
+      "nivel": 2,
+      "categoria": "Geografia"
+    },
+  {
     "pregunta": "Quien escribio Don Quijote?",
     "opcionA": "Lorca",
     "opcionB": "Cervantes",
@@ -266,17 +316,6 @@
     "nivel": 2,
     "pista": "Autor espanol del Siglo de Oro",
     "categoria": "Literatura"
-  },
-  {
-    "pregunta": "Cual es el rio mas largo del mundo?",
-    "opcionA": "Amazonas",
-    "opcionB": "Nilo",
-    "opcionC": "Danubio",
-    "opcionD": "Misisipi",
-    "correcta": "B",
-    "nivel": 2,
-    "pista": "Esta en Africa",
-    "categoria": "Geografia"
   },
   {
     "pregunta": "En que ano llego el hombre a la Luna?",
@@ -299,17 +338,6 @@
     "nivel": 2,
     "pista": "No es lenguaje de programacion",
     "categoria": "Informatica"
-  },
-  {
-    "pregunta": "Cuantos continentes hay?",
-    "opcionA": "5",
-    "opcionB": "6",
-    "opcionC": "7",
-    "opcionD": "8",
-    "correcta": "C",
-    "nivel": 2,
-    "pista": "Incluye America",
-    "categoria": "Geografia"
   },
 {
     "pregunta": "Que elemento quimico tiene simbolo O?",
