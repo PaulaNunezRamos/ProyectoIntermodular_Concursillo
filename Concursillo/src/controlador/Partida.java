@@ -9,6 +9,7 @@ import basedatos.GestorPuntuaciones;
 import modelo.Pregunta;
 import modelo.Puntuacion;
 
+@SuppressWarnings("unused")
 public class Partida {
 
 	private GestorPreguntas gestorPreguntas;
@@ -165,9 +166,10 @@ public class Partida {
 	public String[] usarComodin5050(ArrayList<String> opcionesYaEliminadas) {
 
 		if (comodin5050Usado || partidaTerminada || preguntaActual == null) {
-			comodin5050Usado = true;
 			return new String[0];
 		}
+
+		comodin5050Usado = true;
 
 		ArrayList<String> incorrectas = obtenerOpcionesIncorrectas();
 
