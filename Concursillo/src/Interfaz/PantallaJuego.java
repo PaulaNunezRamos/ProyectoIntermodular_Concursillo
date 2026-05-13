@@ -7,12 +7,17 @@ import java.awt.Toolkit;
 import java.net.URL;
 import java.util.ArrayList;
 
+import javax.swing.*;
+import javax.swing.BorderFactory;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
+import javax.swing.JDialog;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+import javax.swing.JTextArea;
 import javax.swing.SwingConstants;
 import javax.swing.border.EmptyBorder;
 
@@ -117,18 +122,26 @@ public class PantallaJuego extends JFrame {
 			String[] eliminadas = partida.usarComodin5050(opcionesEliminadas);
 
 			if (eliminadas.length == 0) {
-				JOptionPane.showMessageDialog(this, "El comodín 50:50 ya no está disponible.");
+				mostrarVentanaComodin(
+						"Comodín 50:50",
+						"Este comodín ya no está disponible."
+				);
 				return;
 			}
+
+			StringBuilder mensaje = new StringBuilder();
+			mensaje.append("El comodín 50:50 ha eliminado dos respuestas incorrectas.\n\n");
+			mensaje.append("Opciones eliminadas:\n");
 
 			for (String opcion : eliminadas) {
 				opcionesEliminadas.add(opcion);
 				ocultarRespuesta(opcion);
+				mensaje.append("- Opción ").append(opcion).append("\n");
 			}
 
 			btnComodin50.setEnabled(false);
 
-			JOptionPane.showMessageDialog(this, "Se han eliminado dos respuestas incorrectas.");
+			mostrarVentanaComodin("Comodín 50:50", mensaje.toString());
 		});
 
 		JButton btnComodinPublico = new JButton("");
@@ -142,17 +155,21 @@ public class PantallaJuego extends JFrame {
 			int[] porcentajes = partida.usarComodinChat();
 
 			if (porcentajes.length == 0) {
-				JOptionPane.showMessageDialog(this, "El comodín del público/chat ya no está disponible.");
+				mostrarVentanaComodin(
+						"Comodín del público",
+						"Este comodín ya no está disponible."
+				);
 				return;
 			}
 
-			String mensaje = "Resultados del público/chat:\n\n"
+			String mensaje = "El público ha votado lo siguiente:\n\n"
 					+ "A: " + porcentajes[0] + "%\n"
 					+ "B: " + porcentajes[1] + "%\n"
 					+ "C: " + porcentajes[2] + "%\n"
-					+ "D: " + porcentajes[3] + "%";
+					+ "D: " + porcentajes[3] + "%\n\n"
+					+ "Piensa bien tu respuesta antes de elegir.";
 
-			JOptionPane.showMessageDialog(this, mensaje);
+			mostrarVentanaComodin("Comodín del público", mensaje);
 
 			btnComodinPublico.setEnabled(false);
 		});
@@ -167,7 +184,10 @@ public class PantallaJuego extends JFrame {
 
 			String mensaje = partida.usarComodinLlamada();
 
-			JOptionPane.showMessageDialog(this, mensaje);
+			mostrarVentanaComodin(
+					"Comodín de la llamada",
+					"Estás llamando a tu contacto...\n\n" + mensaje
+			);
 
 			btnComodinLlamada.setEnabled(false);
 		});
@@ -342,24 +362,35 @@ public class PantallaJuego extends JFrame {
 
 		if (acierto) {
 
-			JOptionPane.showMessageDialog(this, "¡Correcto!");
-
 			if (partida.isPartidaTerminada()) {
-				JOptionPane.showMessageDialog(
-						this,
-						"¡Has completado el juego!\nDinero final: " + formatearDinero(partida.getDineroAcumulado())
+				mostrarVentanaResultado(
+						"¡VICTORIA!",
+						"Has completado el juego.\n\n"
+								+ "Dinero final: " + formatearDinero(partida.getDineroAcumulado()),
+						true
 				);
 				volverAlMenu();
+
 			} else {
+				mostrarVentanaResultado(
+						"¡CORRECTO!",
+						"Has acertado la pregunta.\n\n"
+								+ "Subes al nivel " + partida.getNivelActual() + ".\n"
+								+ "Dinero acumulado: " + formatearDinero(partida.getDineroAcumulado()),
+						true
+				);
+
 				cargarPreguntaEnPantalla();
 			}
 
 		} else {
 
-			JOptionPane.showMessageDialog(
-					this,
-					"Incorrecto.\nLa respuesta correcta era: " + preguntaAnterior.getCorrecta()
-							+ "\nDinero final: " + formatearDinero(partida.getDineroAcumulado())
+			mostrarVentanaResultado(
+					"INCORRECTO",
+					"Has fallado la pregunta.\n\n"
+							+ "La respuesta correcta era: " + preguntaAnterior.getCorrecta() + ".\n"
+							+ "Dinero final: " + formatearDinero(partida.getDineroAcumulado()),
+					false
 			);
 
 			volverAlMenu();
@@ -426,4 +457,102 @@ public class PantallaJuego extends JFrame {
 
 		return new ImageIcon(url);
 	}
+
+	private void mostrarVentanaComodin(String titulo, String mensaje) {
+		JDialog dialogo = new JDialog(this, titulo, true);
+		dialogo.setSize(470, 330);
+		dialogo.setLocationRelativeTo(this);
+		dialogo.setResizable(false);
+
+		JPanel panel = new JPanel();
+		panel.setLayout(null);
+		panel.setBackground(new Color(5, 15, 55));
+		dialogo.setContentPane(panel);
+
+		JLabel lblTitulo = new JLabel(titulo, SwingConstants.CENTER);
+		lblTitulo.setForeground(new Color(255, 220, 80));
+		lblTitulo.setFont(new Font("Arial", Font.BOLD, 23));
+		lblTitulo.setBounds(20, 20, 420, 35);
+		panel.add(lblTitulo);
+
+		JTextArea areaTexto = new JTextArea(mensaje);
+		areaTexto.setEditable(false);
+		areaTexto.setLineWrap(true);
+		areaTexto.setWrapStyleWord(true);
+		areaTexto.setFont(new Font("Arial", Font.BOLD, 15));
+		areaTexto.setForeground(Color.WHITE);
+		areaTexto.setBackground(new Color(8, 25, 80));
+		areaTexto.setBorder(BorderFactory.createEmptyBorder(15, 15, 15, 15));
+
+		JScrollPane scroll = new JScrollPane(areaTexto);
+		scroll.setBounds(35, 75, 385, 150);
+		scroll.setBorder(BorderFactory.createLineBorder(new Color(255, 220, 80), 2));
+		panel.add(scroll);
+
+		JButton btnCerrar = crearBotonDialogo("Cerrar");
+		btnCerrar.setBounds(175, 245, 110, 35);
+		btnCerrar.addActionListener(e -> dialogo.dispose());
+		panel.add(btnCerrar);
+
+		dialogo.getRootPane().setDefaultButton(btnCerrar);
+		dialogo.setVisible(true);
+	}
+
+	private JButton crearBotonDialogo(String texto) {
+		JButton boton = new JButton(texto);
+		boton.setFont(new Font("Arial", Font.BOLD, 13));
+		boton.setForeground(Color.WHITE);
+		boton.setBackground(new Color(0, 70, 150));
+		boton.setFocusPainted(false);
+		boton.setBorder(BorderFactory.createLineBorder(new Color(255, 220, 80), 1));
+		return boton;
+	}
+
+	private void mostrarVentanaResultado(String titulo, String mensaje, boolean acierto) {
+		JDialog dialogo = new JDialog(this, titulo, true);
+		dialogo.setSize(470, 310);
+		dialogo.setLocationRelativeTo(this);
+		dialogo.setResizable(false);
+
+		JPanel panel = new JPanel();
+		panel.setLayout(null);
+		panel.setBackground(new Color(5, 15, 55));
+		dialogo.setContentPane(panel);
+
+		JLabel lblTitulo = new JLabel(titulo, SwingConstants.CENTER);
+
+		if (acierto) {
+			lblTitulo.setForeground(new Color(80, 255, 120));
+		} else {
+			lblTitulo.setForeground(new Color(255, 90, 90));
+		}
+
+		lblTitulo.setFont(new Font("Arial", Font.BOLD, 26));
+		lblTitulo.setBounds(20, 20, 420, 40);
+		panel.add(lblTitulo);
+
+		JTextArea areaTexto = new JTextArea(mensaje);
+		areaTexto.setEditable(false);
+		areaTexto.setLineWrap(true);
+		areaTexto.setWrapStyleWord(true);
+		areaTexto.setFont(new Font("Arial", Font.BOLD, 15));
+		areaTexto.setForeground(Color.WHITE);
+		areaTexto.setBackground(new Color(8, 25, 80));
+		areaTexto.setBorder(BorderFactory.createEmptyBorder(15, 15, 15, 15));
+
+		JScrollPane scroll = new JScrollPane(areaTexto);
+		scroll.setBounds(35, 75, 385, 120);
+		scroll.setBorder(BorderFactory.createLineBorder(new Color(255, 220, 80), 2));
+		panel.add(scroll);
+
+		JButton btnCerrar = crearBotonDialogo("Continuar");
+		btnCerrar.setBounds(175, 215, 120, 35);
+		btnCerrar.addActionListener(e -> dialogo.dispose());
+		panel.add(btnCerrar);
+
+		dialogo.getRootPane().setDefaultButton(btnCerrar);
+		dialogo.setVisible(true);
+	}
+
+
 }

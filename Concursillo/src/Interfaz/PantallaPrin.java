@@ -8,12 +8,18 @@ import java.awt.Toolkit;
 import java.net.URL;
 import java.util.ArrayList;
 
+import javax.swing.*;
+import javax.swing.BorderFactory;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
+import javax.swing.JDialog;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+import javax.swing.JTextArea;
+import javax.swing.JTextField;
 import javax.swing.SwingConstants;
 import javax.swing.border.EmptyBorder;
 
@@ -65,12 +71,7 @@ public class PantallaPrin extends JFrame {
 		JButton btnJugar = crearBotonMenu("Jugar");
 		btnJugar.addActionListener(e -> {
 
-			String nombre = JOptionPane.showInputDialog(
-					PantallaPrin.this,
-					"Introduce tu nombre:",
-					"Nueva partida",
-					JOptionPane.QUESTION_MESSAGE
-			);
+			String nombre = pedirNombreJugador();
 
 			if (nombre != null && !nombre.trim().equals("")) {
 				PantallaJuego ventanaJuego = new PantallaJuego(nombre.trim());
@@ -153,12 +154,7 @@ public class PantallaPrin extends JFrame {
 				+ "Objetivo:\n"
 				+ "Llegar al último nivel y conseguir el máximo premio.";
 
-		JOptionPane.showMessageDialog(
-				this,
-				mensaje,
-				"Información del juego",
-				JOptionPane.INFORMATION_MESSAGE
-		);
+		mostrarVentanaTexto("Información del juego", mensaje);
 	}
 
 	private void mostrarRanking() {
@@ -168,12 +164,7 @@ public class PantallaPrin extends JFrame {
 			ArrayList<Puntuacion> ranking = gestor.obtenerRanking();
 
 			if (ranking.isEmpty()) {
-				JOptionPane.showMessageDialog(
-						this,
-						"Todavía no hay puntuaciones guardadas.",
-						"Ranking",
-						JOptionPane.INFORMATION_MESSAGE
-				);
+				mostrarVentanaTexto("Ranking", "Todavía no hay puntuaciones guardadas.");
 				return;
 			}
 
@@ -198,12 +189,7 @@ public class PantallaPrin extends JFrame {
 				}
 			}
 
-			JOptionPane.showMessageDialog(
-					this,
-					sb.toString(),
-					"Ranking",
-					JOptionPane.INFORMATION_MESSAGE
-			);
+			mostrarVentanaTexto("Ranking", sb.toString());
 
 		} catch (Exception e) {
 			JOptionPane.showMessageDialog(
@@ -230,4 +216,111 @@ public class PantallaPrin extends JFrame {
 
 		return new ImageIcon(url);
 	}
+
+	private String pedirNombreJugador() {
+		JDialog dialogo = new JDialog(this, "Nueva partida", true);
+		dialogo.setSize(360, 220);
+		dialogo.setLocationRelativeTo(this);
+		dialogo.setResizable(false);
+
+		JPanel panel = new JPanel();
+		panel.setLayout(null);
+		panel.setBackground(new Color(5, 15, 55));
+		dialogo.setContentPane(panel);
+
+		JLabel lblTitulo = new JLabel("EL CONCURSILLO", SwingConstants.CENTER);
+		lblTitulo.setForeground(new Color(255, 220, 80));
+		lblTitulo.setFont(new Font("Arial", Font.BOLD, 22));
+		lblTitulo.setBounds(20, 20, 310, 30);
+		panel.add(lblTitulo);
+
+		JLabel lblTexto = new JLabel("Introduce tu nombre:", SwingConstants.CENTER);
+		lblTexto.setForeground(Color.WHITE);
+		lblTexto.setFont(new Font("Arial", Font.BOLD, 15));
+		lblTexto.setBounds(20, 65, 310, 25);
+		panel.add(lblTexto);
+
+		JTextField txtNombre = new JTextField();
+		txtNombre.setHorizontalAlignment(SwingConstants.CENTER);
+		txtNombre.setFont(new Font("Arial", Font.BOLD, 15));
+		txtNombre.setBounds(70, 100, 220, 32);
+		panel.add(txtNombre);
+
+		final String[] nombre = { null };
+
+		JButton btnAceptar = crearBotonDialogo("Aceptar");
+		btnAceptar.setBounds(65, 145, 100, 30);
+		panel.add(btnAceptar);
+
+		JButton btnCancelar = crearBotonDialogo("Cancelar");
+		btnCancelar.setBounds(185, 145, 100, 30);
+		panel.add(btnCancelar);
+
+		btnAceptar.addActionListener(e -> {
+			if (!txtNombre.getText().trim().isEmpty()) {
+				nombre[0] = txtNombre.getText().trim();
+				dialogo.dispose();
+			} else {
+				JOptionPane.showMessageDialog(dialogo, "Debes introducir un nombre.");
+			}
+		});
+
+		btnCancelar.addActionListener(e -> dialogo.dispose());
+
+		dialogo.getRootPane().setDefaultButton(btnAceptar);
+		dialogo.setVisible(true);
+
+		return nombre[0];
+	}
+
+	private JButton crearBotonDialogo(String texto) {
+		JButton boton = new JButton(texto);
+		boton.setFont(new Font("Arial", Font.BOLD, 13));
+		boton.setForeground(Color.WHITE);
+		boton.setBackground(new Color(0, 70, 150));
+		boton.setFocusPainted(false);
+		boton.setBorder(BorderFactory.createLineBorder(new Color(255, 220, 80), 1));
+		return boton;
+	}
+
+	private void mostrarVentanaTexto(String titulo, String texto) {
+		JDialog dialogo = new JDialog(this, titulo, true);
+		dialogo.setSize(520, 430);
+		dialogo.setLocationRelativeTo(this);
+		dialogo.setResizable(false);
+
+		JPanel panel = new JPanel();
+		panel.setLayout(null);
+		panel.setBackground(new Color(5, 15, 55));
+		dialogo.setContentPane(panel);
+
+		JLabel lblTitulo = new JLabel(titulo, SwingConstants.CENTER);
+		lblTitulo.setForeground(new Color(255, 220, 80));
+		lblTitulo.setFont(new Font("Arial", Font.BOLD, 24));
+		lblTitulo.setBounds(20, 20, 465, 35);
+		panel.add(lblTitulo);
+
+		JTextArea areaTexto = new JTextArea(texto);
+		areaTexto.setEditable(false);
+		areaTexto.setLineWrap(true);
+		areaTexto.setWrapStyleWord(true);
+		areaTexto.setFont(new Font("Arial", Font.BOLD, 14));
+		areaTexto.setForeground(Color.WHITE);
+		areaTexto.setBackground(new Color(8, 25, 80));
+		areaTexto.setBorder(BorderFactory.createEmptyBorder(15, 15, 15, 15));
+
+		JScrollPane scroll = new JScrollPane(areaTexto);
+		scroll.setBounds(35, 70, 435, 250);
+		scroll.setBorder(BorderFactory.createLineBorder(new Color(255, 220, 80), 2));
+		panel.add(scroll);
+
+		JButton btnCerrar = crearBotonDialogo("Cerrar");
+		btnCerrar.setBounds(200, 345, 110, 35);
+		btnCerrar.addActionListener(e -> dialogo.dispose());
+		panel.add(btnCerrar);
+
+		dialogo.getRootPane().setDefaultButton(btnCerrar);
+		dialogo.setVisible(true);
+	}
+
 }
