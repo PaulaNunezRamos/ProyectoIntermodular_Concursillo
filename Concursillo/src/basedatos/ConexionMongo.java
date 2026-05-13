@@ -10,16 +10,25 @@ public class ConexionMongo {
     private static MongoDatabase baseDatos;
 
     public static MongoDatabase conectar() {
+
         if (cliente == null) {
-            cliente = MongoClients.create("mongodb://localhost:27017");
+
+            String uri = "mongodb+srv://app_millonario:app_millonario@concursillo.5owslqy.mongodb.net/?retryWrites=true&w=majority&appName=Concursillo";
+
+            cliente = MongoClients.create(uri);
+
             baseDatos = cliente.getDatabase("millonarioDB");
         }
+
         return baseDatos;
     }
 
     public static void cerrar() {
+
         if (cliente != null) {
             cliente.close();
+            cliente = null;
+            baseDatos = null;
         }
     }
 }

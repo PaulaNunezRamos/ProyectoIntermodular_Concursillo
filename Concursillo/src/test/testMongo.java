@@ -1,34 +1,42 @@
 package test;
+
 import basedatos.ConexionMongo;
-import basedatos.GestorPreguntas;
-import modelo.Pregunta;
+
+import com.mongodb.client.MongoCollection;
+import com.mongodb.client.MongoDatabase;
+import org.bson.Document;
 
 public class testMongo {
 
     public static void main(String[] args) {
 
-        GestorPreguntas gestor = new GestorPreguntas();
+        try {
+            MongoDatabase baseDatos = ConexionMongo.conectar();
 
-        // Sacar varias preguntas para comprobar que NO se repiten
-        for (int i = 0; i < 20; i++) {
+            System.out.println("Conexión correcta a MongoDB Atlas");
+            System.out.println("Base de datos: " + baseDatos.getName());
 
-            Pregunta p = gestor.obtenerPreguntaAleatoria(1);
+            System.out.println("\nColecciones encontradas:");
 
-            if (p == null) {
-                System.out.println("No quedan preguntas disponibles");
-                break;
+            for (String nombreColeccion : baseDatos.listCollectionNames()) {
+                System.out.println("- " + nombreColeccion);
             }
 
-            System.out.println("---------- PREGUNTA ----------");
-            System.out.println(p.getPregunta());
-            System.out.println("A: " + p.getOpcionA());
-            System.out.println("B: " + p.getOpcionB());
-            System.out.println("C: " + p.getOpcionC());
-            System.out.println("D: " + p.getOpcionD());
-            System.out.println("Correcta: " + p.getCorrecta());
-            System.out.println("------------------------------\n");
-        }
+            MongoCollection<Document> coleccionPreguntas = baseDatos.getCollection("preguntas");
+            long totalPreguntas = coleccionPreguntas.countDocuments();
 
-        ConexionMongo.cerrar();
+            System.out.println("\nTotal de preguntas: " + totalPreguntas);
+
+            MongoCollection<Document> coleccionPuntuaciones = baseDatos.getCollection("puntuaciones");
+            long totalPuntuaciones = coleccionPuntuaciones.countDocuments();
+
+            System.out.println("Total de puntuaciones: " + totalPuntuaciones);
+
+            ConexionMongo.cerrar();
+
+        } catch (Exception e) {
+            System.out.println("Error al conectar con MongoDB Atlas");
+            System.out.println(e.getMessage());
+        }
     }
 }

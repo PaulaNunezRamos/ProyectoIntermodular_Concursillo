@@ -6,10 +6,10 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry excluding="res/" kind="src" path="Interfaz"/>
-	<classpathentry kind="src" path="Interfaz/res"/>
 	<classpathentry kind="lib" path="lib/bson-5.1.0.jar"/>
 	<classpathentry kind="lib" path="lib/mongodb-driver-core-5.1.0.jar"/>
 	<classpathentry kind="lib" path="lib/mongodb-driver-sync-5.1.0.jar"/>
+	<classpathentry kind="lib" path="lib/slf4j-api-2.0.18.jar"/>
+	<classpathentry kind="lib" path="lib/slf4j-nop-2.0.18.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
