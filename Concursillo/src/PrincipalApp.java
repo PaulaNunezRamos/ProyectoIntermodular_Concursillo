@@ -1,6 +1,6 @@
-package Interfaz;
-
 import java.awt.EventQueue;
+
+import Interfaz.PantallaPrin;
 
 public class PrincipalApp {
 
