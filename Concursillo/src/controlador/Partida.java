@@ -17,7 +17,7 @@ public class Partida {
 
 	private String nombreJugador;
 	private int nivelActual; // Pregunta actual: de 1 a 15
-	private int dineroAcumulado;
+	private int dineroAcumulado = 0;
 	private Pregunta preguntaActual;
 	private int ultimoNumeroRuleta;
 	private boolean recuperacionComodinUsada;
