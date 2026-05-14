@@ -24,6 +24,9 @@ import javax.swing.border.EmptyBorder;
 import controlador.Partida;
 import modelo.Pregunta;
 
+import basedatos.GestorPuntuaciones;
+import modelo.Puntuacion;
+
 public class PantallaJuego extends JFrame {
 
 	private static final long serialVersionUID = 1L;
@@ -103,7 +106,7 @@ public class PantallaJuego extends JFrame {
 		btnSalir.setBounds(97, 0, 93, 70);
 		contentPane.add(btnSalir);
 
-		btnSalir.addActionListener(e -> volverAlMenu());
+		btnSalir.addActionListener(e -> plantarse());
 
 		lblInfo = new JLabel("", SwingConstants.CENTER);
 		lblInfo.setForeground(Color.WHITE);
@@ -554,5 +557,131 @@ public class PantallaJuego extends JFrame {
 		dialogo.setVisible(true);
 	}
 
+	private void plantarse() {
+
+		boolean confirmar = mostrarConfirmacionPlantarse();
+
+		if (!confirmar) {
+			return;
+		}
+
+		partida.plantarse();
+
+		String mensajeRanking = obtenerMensajeRankingTrasPlantarse();
+
+		mostrarVentanaResultado(
+				"TE HAS PLANTADO",
+				"Has decidido plantarte.\n\n"
+						+ "Dinero acumulado: " + formatearDinero(partida.getDineroAcumulado()) + "\n\n"
+						+ mensajeRanking,
+				true
+		);
+
+		volverAlMenu();
+	}
+
+	private String obtenerMensajeRankingTrasPlantarse() {
+
+		try {
+			GestorPuntuaciones gestor = new GestorPuntuaciones();
+			ArrayList<Puntuacion> ranking = gestor.obtenerRanking();
+
+			int posicion = obtenerPosicionEnRanking(ranking);
+
+			if (posicion == -1) {
+				return "Tu puntuación se ha guardado correctamente.";
+			}
+
+			if (posicion <= 5) {
+				return "¡Enhorabuena! Has entrado en el TOP 5 del ranking.\n"
+						+ "Posición actual: " + posicion + ".";
+			}
+
+			return "Tu puntuación se ha guardado correctamente.\n"
+					+ "Posición actual en el ranking: " + posicion + ".";
+
+		} catch (Exception e) {
+			return "Tu partida ha terminado, pero no se ha podido comprobar el ranking.";
+		}
+	}
+
+	private int obtenerPosicionEnRanking(ArrayList<Puntuacion> ranking) {
+
+		String nombreJugador = partida.getNombreJugador();
+		int dineroJugador = partida.getDineroAcumulado();
+
+		for (int i = 0; i < ranking.size(); i++) {
+			Puntuacion p = ranking.get(i);
+
+			if (p.getNombre().equalsIgnoreCase(nombreJugador)
+					&& p.getPuntos() == dineroJugador) {
+				return i + 1;
+			}
+		}
+
+		return -1;
+	}
+
+	private boolean mostrarConfirmacionPlantarse() {
+
+		final boolean[] confirmado = { false };
+
+		JDialog dialogo = new JDialog(this, "Plantarse", true);
+		dialogo.setSize(470, 300);
+		dialogo.setLocationRelativeTo(this);
+		dialogo.setResizable(false);
+
+		JPanel panel = new JPanel();
+		panel.setLayout(null);
+		panel.setBackground(new Color(5, 15, 55));
+		dialogo.setContentPane(panel);
+
+		JLabel lblTitulo = new JLabel("¿TE QUIERES PLANTAR?", SwingConstants.CENTER);
+		lblTitulo.setForeground(new Color(255, 220, 80));
+		lblTitulo.setFont(new Font("Arial", Font.BOLD, 24));
+		lblTitulo.setBounds(20, 20, 420, 35);
+		panel.add(lblTitulo);
+
+		JTextArea areaTexto = new JTextArea(
+				"Si te plantas ahora, terminarás la partida y conservarás tu dinero acumulado.\n\n"
+						+ "Dinero actual: " + formatearDinero(partida.getDineroAcumulado()) + "\n\n"
+						+ "¿Seguro que quieres plantarte?"
+		);
+		areaTexto.setEditable(false);
+		areaTexto.setLineWrap(true);
+		areaTexto.setWrapStyleWord(true);
+		areaTexto.setFont(new Font("Arial", Font.BOLD, 15));
+		areaTexto.setForeground(Color.WHITE);
+		areaTexto.setBackground(new Color(8, 25, 80));
+		areaTexto.setBorder(BorderFactory.createEmptyBorder(15, 15, 15, 15));
+
+		JScrollPane scroll = new JScrollPane(areaTexto);
+		scroll.setBounds(35, 70, 385, 120);
+		scroll.setBorder(BorderFactory.createLineBorder(new Color(255, 220, 80), 2));
+		panel.add(scroll);
+
+		JButton btnPlantarse = crearBotonDialogo("Plantarse");
+		btnPlantarse.setBounds(100, 215, 120, 35);
+		panel.add(btnPlantarse);
+
+		JButton btnSeguir = crearBotonDialogo("Seguir jugando");
+		btnSeguir.setBounds(240, 215, 130, 35);
+		panel.add(btnSeguir);
+
+		btnPlantarse.addActionListener(e -> {
+			confirmado[0] = true;
+			dialogo.dispose();
+		});
+
+		btnSeguir.addActionListener(e -> {
+			confirmado[0] = false;
+			dialogo.dispose();
+		});
+
+		dialogo.getRootPane().setDefaultButton(btnSeguir);
+		dialogo.setVisible(true);
+
+		return confirmado[0];
+	}
 
 }
