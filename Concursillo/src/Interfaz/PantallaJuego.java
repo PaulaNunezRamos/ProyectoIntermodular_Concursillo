@@ -7,7 +7,6 @@ import java.awt.Toolkit;
 import java.net.URL;
 import java.util.ArrayList;
 
-import javax.swing.*;
 import javax.swing.BorderFactory;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
