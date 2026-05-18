@@ -1427,7 +1427,6 @@
     "opcionD": "Física nuclear",
     "correcta": "B",
     "nivel": 3,
-    "pista": "Empieza por A",
     "categoria": "Astronomía"
   },
   {
@@ -1438,7 +1437,6 @@
     "opcionD": "Cometa",
     "correcta": "C",
     "nivel": 3,
-    "pista": "Empieza por A",
     "categoria": "Astronomía"
   },
   {
@@ -1449,7 +1447,6 @@
     "opcionD": "Cometas",
     "correcta": "B",
     "nivel": 3,
-    "pista": "Empieza por S",
     "categoria": "Astronomía"
   },
   {
@@ -1460,7 +1457,6 @@
     "opcionD": "Milla",
     "correcta": "B",
     "nivel": 3,
-    "pista": "Empieza por A",
     "categoria": "Astronomía"
   },
   {
@@ -1471,7 +1467,6 @@
     "opcionD": "Gravedad cuántica",
     "correcta": "B",
     "nivel": 3,
-    "pista": "Empieza por B",
     "categoria": "Astronomía"
   },
   {
@@ -1482,7 +1477,6 @@
     "opcionD": "Goya",
     "correcta": "C",
     "nivel": 3,
-    "pista": "Empieza por P",
     "categoria": "Arte"
   },
   {
@@ -1493,7 +1487,6 @@
     "opcionD": "Neoclasicismo",
     "correcta": "B",
     "nivel": 3,
-    "pista": "Empieza por S",
     "categoria": "Arte"
   },
   {
@@ -1504,7 +1497,6 @@
     "opcionD": "Picasso",
     "correcta": "A",
     "nivel": 3,
-    "pista": "Empieza por V",
     "categoria": "Arte"
   },
   {
@@ -1515,7 +1507,6 @@
     "opcionD": "Grabado",
     "correcta": "B",
     "nivel": 3,
-    "pista": "Empieza por F",
     "categoria": "Arte"
   },
   {
@@ -1526,7 +1517,6 @@
     "opcionD": "Kahlo",
     "correcta": "A",
     "nivel": 3,
-    "pista": "Empieza por D",
     "categoria": "Arte"
   },
   {
@@ -1537,7 +1527,6 @@
     "opcionD": "Glucosa",
     "correcta": "B",
     "nivel": 3,
-    "pista": "Empieza por A",
     "categoria": "Biología"
   },
   {
@@ -1548,7 +1537,6 @@
     "opcionD": "Clonación",
     "correcta": "B",
     "nivel": 3,
-    "pista": "Empieza por M",
     "categoria": "Biología"
   },
   {
@@ -1559,7 +1547,6 @@
     "opcionD": "Hígado",
     "correcta": "C",
     "nivel": 3,
-    "pista": "Empieza por C",
     "categoria": "Biología"
   },
   {
@@ -1570,7 +1557,6 @@
     "opcionD": "Axón",
     "correcta": "B",
     "nivel": 3,
-    "pista": "Empieza por N",
     "categoria": "Biología"
   },
   {
@@ -1581,7 +1567,6 @@
     "opcionD": "Fermentación",
     "correcta": "B",
     "nivel": 3,
-    "pista": "Empieza por R",
     "categoria": "Biología"
   },
   {
@@ -1592,7 +1577,6 @@
     "opcionD": "Geología",
     "correcta": "C",
     "nivel": 3,
-    "pista": "Empieza por Q",
     "categoria": "Química"
   },
   {
@@ -1603,7 +1587,6 @@
     "opcionD": "Modelo cuántico clásico",
     "correcta": "A",
     "nivel": 3,
-    "pista": "Empieza por B",
     "categoria": "Química"
   },
   {
@@ -1614,7 +1597,6 @@
     "opcionD": "Núcleo",
     "correcta": "C",
     "nivel": 3,
-    "pista": "Empieza por E",
     "categoria": "Química"
   },
   {
@@ -1625,7 +1607,6 @@
     "opcionD": "Sublimación",
     "correcta": "B",
     "nivel": 3,
-    "pista": "Empieza por D",
     "categoria": "Química"
   },
   {
@@ -1636,7 +1617,6 @@
     "opcionD": "Isótopo",
     "correcta": "B",
     "nivel": 3,
-    "pista": "Empieza por N",
     "categoria": "Química"
   },
   {
@@ -1647,7 +1627,6 @@
     "opcionD": "Guerra de Vietnam",
     "correcta": "B",
     "nivel": 3,
-    "pista": "Empieza por G",
     "categoria": "Historia"
   },
   {
@@ -1658,7 +1637,6 @@
     "opcionD": "Tratado de Roma",
     "correcta": "B",
     "nivel": 3,
-    "pista": "Empieza por V",
     "categoria": "Historia"
   },
   {
@@ -1669,7 +1647,6 @@
     "opcionD": "Bizantina",
     "correcta": "B",
     "nivel": 3,
-    "pista": "Empieza por E",
     "categoria": "Historia"
   },
   {
@@ -1680,7 +1657,6 @@
     "opcionD": "Revolución Americana",
     "correcta": "B",
     "nivel": 3,
-    "pista": "Empieza por F",
     "categoria": "Historia"
   },
   {
@@ -1691,7 +1667,6 @@
     "opcionD": "Mussolini",
     "correcta": "C",
     "nivel": 3,
-    "pista": "Empieza por H",
     "categoria": "Historia"
   },
   {
@@ -1702,7 +1677,6 @@
     "opcionD": "Miguel de Cervantes",
     "correcta": "A",
     "nivel": 3,
-    "pista": "Empieza por D",
     "categoria": "Literatura"
   },
   {
@@ -1713,7 +1687,6 @@
     "opcionD": "Ironía",
     "correcta": "B",
     "nivel": 3,
-    "pista": "Empieza por A",
     "categoria": "Literatura"
   },
   {
@@ -1724,7 +1697,6 @@
     "opcionD": "Aristóteles",
     "correcta": "A",
     "nivel": 3,
-    "pista": "Empieza por H",
     "categoria": "Literatura"
   },
   {
@@ -1735,7 +1707,6 @@
     "opcionD": "Una narración",
     "correcta": "B",
     "nivel": 3,
-    "pista": "Empieza por H",
     "categoria": "Literatura"
   },
   {
@@ -1746,7 +1717,6 @@
     "opcionD": "La Ilíada",
     "correcta": "B",
     "nivel": 3,
-    "pista": "Empieza por H",
     "categoria": "Literatura"
   },
   {
@@ -1757,7 +1727,6 @@
     "opcionD": "C++",
     "correcta": "B",
     "nivel": 3,
-    "pista": "Empieza por H",
     "categoria": "Informática"
   },
   {
@@ -1768,7 +1737,6 @@
     "opcionD": "macOS",
     "correcta": "B",
     "nivel": 3,
-    "pista": "Empieza por W",
     "categoria": "Informática"
   },
   {
@@ -1779,7 +1747,6 @@
     "opcionD": "SQL",
     "correcta": "A",
     "nivel": 3,
-    "pista": "Empieza por P",
     "categoria": "Informática"
   },
   {
@@ -1790,7 +1757,6 @@
     "opcionD": "Oracle",
     "correcta": "C",
     "nivel": 3,
-    "pista": "Empieza por M",
     "categoria": "Informática"
   },
   {
@@ -1801,7 +1767,6 @@
     "opcionD": "SSH",
     "correcta": "B",
     "nivel": 3,
-    "pista": "Empieza por H",
     "categoria": "Informática"
   },
   {
@@ -1812,7 +1777,6 @@
     "opcionD": "Beethoven",
     "correcta": "B",
     "nivel": 3,
-    "pista": "Empieza por V",
     "categoria": "Música"
   },
   {
@@ -1823,7 +1787,6 @@
     "opcionD": "Melodía",
     "correcta": "B",
     "nivel": 3,
-    "pista": "Empieza por T",
     "categoria": "Música"
   },
   {
@@ -1834,7 +1797,6 @@
     "opcionD": "Wagner",
     "correcta": "B",
     "nivel": 3,
-    "pista": "Empieza por B",
     "categoria": "Música"
   },
   {
@@ -1845,7 +1807,6 @@
     "opcionD": "El instrumento principal",
     "correcta": "B",
     "nivel": 3,
-    "pista": "Empieza por H",
     "categoria": "Música"
   },
   {
@@ -1856,7 +1817,6 @@
     "opcionD": "Flauta dulce",
     "correcta": "A",
     "nivel": 3,
-    "pista": "Empieza por S",
     "categoria": "Música"
   },
   {
@@ -1867,7 +1827,6 @@
     "opcionD": "Copa América",
     "correcta": "C",
     "nivel": 3,
-    "pista": "Empieza por M",
     "categoria": "Deportes"
   },
   {
@@ -1878,7 +1837,6 @@
     "opcionD": "Michael Phelps",
     "correcta": "A",
     "nivel": 3,
-    "pista": "Empieza por U",
     "categoria": "Deportes"
   },
   {
@@ -1889,7 +1847,6 @@
     "opcionD": "Bádminton",
     "correcta": "C",
     "nivel": 3,
-    "pista": "Empieza por V",
     "categoria": "Deportes"
   },
   {
@@ -1900,7 +1857,6 @@
     "opcionD": "7",
     "correcta": "B",
     "nivel": 3,
-    "pista": "Empieza por C",
     "categoria": "Deportes"
   },
   {
@@ -1911,7 +1867,6 @@
     "opcionD": "Pentatlón",
     "correcta": "B",
     "nivel": 3,
-    "pista": "Empieza por T",
     "categoria": "Deportes"
   }
 ]
