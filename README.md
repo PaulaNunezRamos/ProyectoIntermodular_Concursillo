@@ -84,15 +84,15 @@ Simula la ayuda del público o del chat, mostrando una posible respuesta recomen
 
 Simula una llamada de ayuda, dando una posible pista sobre la respuesta correcta.
 
-### Comodín del Sacrificio
+### Comodín del Sacrificio (no implementado en la interfaz gráfica)
 
 Comodín especial que permite recibir ayuda a cambio de una consecuencia dentro del juego.
 
-### Comodín de la Ruleta
+### Comodín de la Ruleta (no implementado en la interfaz gráfica)
 
 Lanza una ruleta que puede provocar distintos efectos sobre las respuestas disponibles.
 
-### Comodín del Mago
+### Comodín del Mago (no implementado en la interfaz gráfica)
 
 Permite cambiar la pregunta actual por otra pregunta diferente del mismo nivel o dificultad.
 
