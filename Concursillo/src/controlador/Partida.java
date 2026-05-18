@@ -33,11 +33,11 @@ public class Partida {
 
 	// Estado de los comodines
 	private boolean comodin5050Usado;
-	private boolean comodinPublicoUsado; // Tambien sirve como comodin del chat
+	private boolean comodinPublicoUsado;
 	private boolean comodinLlamadaUsado;
-	private boolean comodinSacrificioUsado;
-	private boolean comodinRuletaUsado;
-	private boolean comodinMagoUsado;
+	private boolean comodinSacrificioUsado; //No implementado en la interfaz
+	private boolean comodinRuletaUsado; //No implementado en la interfaz
+	private boolean comodinMagoUsado; //No implementado en la interfaz
 
 	public Partida(String nombreJugador) {
 		this.nombreJugador = nombreJugador;
@@ -64,7 +64,6 @@ public class Partida {
 	private void cargarNuevaPregunta() {
 		int nivelDificultad = calcularNivelDificultad();
 		this.preguntaActual = gestorPreguntas.obtenerPreguntaAleatoria(nivelDificultad);
-
 		if (this.preguntaActual == null) {
 			this.partidaTerminada = true;
 		}
@@ -99,23 +98,18 @@ public class Partida {
 	public boolean isPartidaTerminada() {
 		return partidaTerminada;
 	}
-
 	public boolean comprobarRespuesta(String respuestaElegida) {
 
 		if (partidaTerminada || preguntaActual == null) {
 			return false;
 		}
-
 		if (respuestaElegida == null) {
 			return false;
 		}
-
 		respuestaElegida = respuestaElegida.toUpperCase();
 
 		if (preguntaActual.getCorrecta().equalsIgnoreCase(respuestaElegida)) {
-
 			dineroAcumulado = PREMIOS[nivelActual];
-
 			if (nivelActual == 15) {
 				partidaTerminada = true;
 				guardarPuntuacion();
@@ -127,7 +121,6 @@ public class Partida {
 			return true;
 
 		} else {
-
 			dineroAcumulado = calcularPremioSeguro();
 			partidaTerminada = true;
 			guardarPuntuacion();
@@ -168,7 +161,6 @@ public class Partida {
 		if (comodin5050Usado || partidaTerminada || preguntaActual == null) {
 			return new String[0];
 		}
-
 		comodin5050Usado = true;
 
 		ArrayList<String> incorrectas = obtenerOpcionesIncorrectas();
@@ -180,19 +172,14 @@ public class Partida {
 		}
 
 		Collections.shuffle(incorrectas);
-
 		int cantidadEliminar = 2;
-
 		if (cantidadEliminar > incorrectas.size()) {
 			cantidadEliminar = incorrectas.size();
 		}
-
 		String[] opcionesEliminadas = new String[cantidadEliminar];
-
 		for (int i = 0; i < cantidadEliminar; i++) {
 			opcionesEliminadas[i] = incorrectas.get(i);
 		}
-
 		return opcionesEliminadas;
 	}
 
@@ -203,18 +190,13 @@ public class Partida {
 	}
 
 	public int[] usarComodinChat() {
-
 		if (comodinPublicoUsado || partidaTerminada || preguntaActual == null) {
 			return new int[0];
 		}
-
 		comodinPublicoUsado = true;
-
 		int[] porcentajes = new int[4];
-
 		String correcta = preguntaActual.getCorrecta().toUpperCase();
 		int indiceCorrecta = correcta.charAt(0) - 'A';
-
 		int porcentajeCorrecta = 45 + random.nextInt(31); // De 45 a 75
 		int restante = 100 - porcentajeCorrecta;
 
@@ -261,6 +243,7 @@ public class Partida {
 	}
 
 	// ---------------- COMODIN SACRIFICIO ----------------
+	//No implementado en la interfaz
 
 	public String usarComodinSacrificio() {
 
@@ -282,6 +265,7 @@ public class Partida {
 	}
 
 	// ---------------- COMODIN RULETA ----------------
+	//No implementado en la interfaz
 
 	public String[] usarComodinRuleta(ArrayList<String> opcionesYaEliminadas) {
 
@@ -323,61 +307,48 @@ public class Partida {
 	}
 
 	// ---------------- COMODIN MAGO ----------------
+	//No implementado en la interfaz
 
 	public boolean usarComodinMago() {
-
 		if (comodinMagoUsado || partidaTerminada || preguntaActual == null) {
 			return false;
 		}
-
 		// El mago solo se puede usar a partir de la pregunta 7
 		if (nivelActual < 7) {
 			return false;
 		}
-
 		int nivelDificultad = calcularNivelDificultad();
 		String categoriaActual = preguntaActual.getCategoria();
-
 		Pregunta nuevaPregunta = gestorPreguntas.obtenerPreguntaAleatoriaPorNivelYCategoria(
 				nivelDificultad,
 				categoriaActual);
-
 		if (nuevaPregunta != null) {
 			preguntaActual = nuevaPregunta;
 			comodinMagoUsado = true;
 			return true;
 		}
-
 		return false;
 	}
 
 	// ---------------- METODOS AUXILIARES ----------------
 
 	private ArrayList<String> obtenerOpcionesIncorrectas() {
-
 		ArrayList<String> incorrectas = new ArrayList<String>();
-
 		incorrectas.add("A");
 		incorrectas.add("B");
 		incorrectas.add("C");
 		incorrectas.add("D");
-
 		incorrectas.remove(preguntaActual.getCorrecta().toUpperCase());
-
 		return incorrectas;
 	}
 
 	private String obtenerRespuestaIncorrectaAleatoria() {
-
 		ArrayList<String> incorrectas = obtenerOpcionesIncorrectas();
-
 		Collections.shuffle(incorrectas);
-
 		return incorrectas.get(0);
 	}
 
 	private String obtenerTextoRespuesta(String letra) {
-
 		if (letra.equalsIgnoreCase("A")) {
 			return preguntaActual.getOpcionA();
 		} else if (letra.equalsIgnoreCase("B")) {
@@ -395,45 +366,33 @@ public class Partida {
 
 		if (comodin.equalsIgnoreCase("5050")) {
 			return comodin5050Usado;
-
 		} else if (comodin.equalsIgnoreCase("chat") || comodin.equalsIgnoreCase("publico")) {
 			return comodinPublicoUsado;
-
 		} else if (comodin.equalsIgnoreCase("llamada")) {
 			return comodinLlamadaUsado;
-
 		} else if (comodin.equalsIgnoreCase("sacrificio")) {
 			return comodinSacrificioUsado;
-
 		} else if (comodin.equalsIgnoreCase("mago")) {
 			return comodinMagoUsado;
-
 		} else if (comodin.equalsIgnoreCase("ruleta")) {
 			return comodinRuletaUsado;
 		}
-
 		return false;
 	}
 
 	// ---------------- RECUPERAR COMODIN ----------------
 
 	private void recuperarComodin(String comodin) {
-
 		if (comodin.equalsIgnoreCase("5050")) {
 			comodin5050Usado = false;
-
 		} else if (comodin.equalsIgnoreCase("chat") || comodin.equalsIgnoreCase("publico")) {
 			comodinPublicoUsado = false;
-
 		} else if (comodin.equalsIgnoreCase("llamada")) {
 			comodinLlamadaUsado = false;
-
 		} else if (comodin.equalsIgnoreCase("sacrificio")) {
 			comodinSacrificioUsado = false;
-
 		} else if (comodin.equalsIgnoreCase("mago")) {
 			comodinMagoUsado = false;
-
 		} else if (comodin.equalsIgnoreCase("ruleta")) {
 			comodinRuletaUsado = false;
 		}
@@ -444,26 +403,20 @@ public class Partida {
 		if (comodin == null || comodin.equals("")) {
 			return false;
 		}
-
 		if (partidaTerminada) {
 			return false;
 		}
-
 		if (nivelActual < 8) {
 			return false;
 		}
-
 		if (recuperacionComodinUsada) {
 			return false;
 		}
-
 		if (!estaComodinUsado(comodin)) {
 			return false;
 		}
-
 		recuperarComodin(comodin);
 		recuperacionComodinUsada = true;
-
 		return true;
 	}
 

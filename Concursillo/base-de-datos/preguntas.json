@@ -1,56 +1,56 @@
 [
   {
-    "pregunta": "Cual es la capital de España?",
+    "pregunta": "¿Cuál es la capital de España?",
     "opcionA": "Barcelona",
     "opcionB": "Madrid",
     "opcionC": "Valencia",
     "opcionD": "Sevilla",
     "correcta": "B",
     "nivel": 1,
-    "categoria": "Geografia"
+    "categoria": "Geografía"
   },
   {
-    "pregunta": "Cuantos océanos hay en la Tierra?",
+    "pregunta": "¿Cuántos océanos hay en la Tierra?",
     "opcionA": "4",
     "opcionB": "3",
     "opcionC": "5",
     "opcionD": "2",
     "correcta": "C",
     "nivel": 1,
-    "categoria": "Geografia"
+    "categoria": "Geografía"
   },
   {
-    "pregunta": "Cual es el desierto más grande del mundo?",
+    "pregunta": "¿Cuál es el desierto cálido más grande del mundo?",
     "opcionA": "Desierto Sirio",
     "opcionB": "Desierto de la Gran Cuenca",
     "opcionC": "Desierto del Sáhara",
     "opcionD": "Desierto de Arabia",
     "correcta": "C",
     "nivel": 1,
-    "categoria": "Geografia"
+    "categoria": "Geografía"
   },
   {
-    "pregunta": "Cual es la montaña más alta de España?",
+    "pregunta": "¿Cuál es la montaña más alta de España?",
     "opcionA": "Teide",
     "opcionB": "Mulhacén",
     "opcionC": "Aneto",
     "opcionD": "Almanzor",
     "correcta": "A",
     "nivel": 1,
-    "categoria": "Geografia"
+    "categoria": "Geografía"
   },
   {
-    "pregunta": "Cual de estos países no es Europeo?",
+    "pregunta": "¿Cuál de estos países no es europeo?",
     "opcionA": "España",
     "opcionB": "Italia",
     "opcionC": "Francia",
     "opcionD": "Colombia",
     "correcta": "D",
     "nivel": 1,
-    "categoria": "Geografia"
+    "categoria": "Geografía"
   },
   {
-    "pregunta": "Con que objeto se descubrio la gravedad?",
+    "pregunta": "¿Qué objeto inspiró a Newton para estudiar la gravedad, según la leyenda?",
     "opcionA": "Manzana",
     "opcionB": "Pera",
     "opcionC": "Mandarina",
@@ -60,7 +60,7 @@
     "categoria": "Física"
   },
   {
-    "pregunta": "Masa por aceleración es igual a ...",
+    "pregunta": "¿A qué equivale la masa por la aceleración?",
     "opcionA": "Gravedad",
     "opcionB": "Fuerza",
     "opcionC": "Velocidad",
@@ -70,7 +70,7 @@
     "categoria": "Física"
   },
   {
-    "pregunta": "Que pasa cuando 2 cargas (negativa y positiva) interactúan?",
+    "pregunta": "¿Qué ocurre cuando interactúan una carga negativa y una positiva?",
     "opcionA": "Se repelen",
     "opcionB": "Se suman",
     "opcionC": "Se atraen",
@@ -80,17 +80,17 @@
     "categoria": "Física"
   },
   {
-    "pregunta": "Cual es el videojuego mas vendido de todos los tiempos hasta ahora?",
+    "pregunta": "¿Cuál es el videojuego más vendido de todos los tiempos?",
     "opcionA": "Grand Theft Auto V",
     "opcionB": "Tetris",
-    "opcionC": "Super Mario Bros ",
+    "opcionC": "Super Mario Bros.",
     "opcionD": "Minecraft",
     "correcta": "D",
     "nivel": 1,
     "categoria": "Videojuegos"
   },
   {
-    "pregunta": "Las siglas MRU qué significan?",
+    "pregunta": "¿Qué significan las siglas MRU?",
     "opcionA": "Movimiento rotatorio uniforme",
     "opcionB": "Movimiento resistente unido",
     "opcionC": "Movimiento rectilíneo uniforme",
@@ -100,7 +100,7 @@
     "categoria": "Física"
   },
   {
-    "pregunta": "Cual es la unidad en el Sistema Internacional?",
+    "pregunta": "¿Cuál es la unidad básica de longitud en el Sistema Internacional?",
     "opcionA": "km",
     "opcionB": "kg",
     "opcionC": "m",
@@ -110,72 +110,22 @@
     "categoria": "Física"
   },
   {
-    "pregunta": "Cual es la capital de España?",
-    "opcionA": "Barcelona",
-    "opcionB": "Madrid",
-    "opcionC": "Valencia",
-    "opcionD": "Sevilla",
-    "correcta": "B",
-    "nivel": 1,
-    "categoria": "Astronomía"
-  },
-  {
-    "pregunta": "Cual es la capital de España?",
-    "opcionA": "Barcelona",
-    "opcionB": "Madrid",
-    "opcionC": "Valencia",
-    "opcionD": "Sevilla",
-    "correcta": "B",
-    "nivel": 1,
-    "categoria": "Astronomía"
-  },
-  {
-    "pregunta": "Como se llama el protagonista de The Legend of Zelda?",
+    "pregunta": "¿Cómo se llama el protagonista de The Legend of Zelda?",
     "opcionA": "Impa",
     "opcionB": "Link",
     "opcionC": "Zelda",
     "opcionD": "Ganondorf",
-    "correcta": "A",
+    "correcta": "B",
     "nivel": 1,
     "categoria": "Videojuegos"
   },
   {
-    "pregunta": "Cual es la capital de España?",
-    "opcionA": "Barcelona",
-    "opcionB": "Madrid",
-    "opcionC": "Valencia",
-    "opcionD": "Sevilla",
-    "correcta": "B",
-    "nivel": 1,
-    "categoria": "Astronomía"
-  },
-  {
-    "pregunta": "Cual es la capital de España?",
-    "opcionA": "Barcelona",
-    "opcionB": "Madrid",
-    "opcionC": "Valencia",
-    "opcionD": "Sevilla",
-    "correcta": "B",
-    "nivel": 1,
-    "categoria": "Astronomía"
-  },
-  {
-    "pregunta": "Que planeta esta mas cerca del Sol?",
+    "pregunta": "¿Qué planeta está más cerca del Sol?",
     "opcionA": "Venus",
     "opcionB": "Tierra",
     "opcionC": "Mercurio",
     "opcionD": "Marte",
     "correcta": "C",
-    "nivel": 1,
-    "categoria": "Astronomía"
-  },
-  {
-    "pregunta": "¿Cuál es el planeta más cercano al Sol?",
-    "opcionA": "Venus",
-    "opcionB": "Mercurio",
-    "opcionC": "Tierra",
-    "opcionD": "Marte",
-    "correcta": "B",
     "nivel": 1,
     "categoria": "Astronomía"
   },
@@ -220,7 +170,7 @@
     "categoria": "Astronomía"
   },
   {
-    "pregunta": "Que color resulta de mezclar rojo y blanco?",
+    "pregunta": "¿Qué color resulta de mezclar rojo y blanco?",
     "opcionA": "Rosa",
     "opcionB": "Morado",
     "opcionC": "Naranja",
@@ -230,7 +180,7 @@
     "categoria": "Arte"
   },
   {
-    "pregunta": "Qué es una escultura?",
+    "pregunta": "¿Qué es una escultura?",
     "opcionA": "Es el arte de crear obras tridimensionales con un material",
     "opcionB": "Es el arte de crear obras bidimensionales con un material",
     "opcionC": "Es el arte de crear obras unidimensionales con un material",
@@ -240,7 +190,7 @@
     "categoria": "Arte"
   },
   {
-    "pregunta": "Qué es el contraste?",
+    "pregunta": "¿Qué es el contraste en arte?",
     "opcionA": "Es la diferencia clara entre diferentes elementos visuales u opuestos para destacar una obra",
     "opcionB": "Es la suma de los mismos colores para destacar una obra",
     "opcionC": "Todas son correctas",
@@ -250,7 +200,7 @@
     "categoria": "Arte"
   },
   {
-    "pregunta": "Qué es un boceto?",
+    "pregunta": "¿Qué es un boceto?",
     "opcionA": "Es un dibujo rápido y sencillo que sirve como borrador",
     "opcionB": "Un color que se usa para contrastar un dibujo",
     "opcionC": "Una escultura de mármol",
@@ -260,10 +210,10 @@
     "categoria": "Arte"
   },
   {
-    "pregunta": "El color es un elemento crucial en el arte?",
+    "pregunta": "¿El color puede ser un elemento importante en una obra artística?",
     "opcionA": "No",
     "opcionB": "Sí",
-    "opcionC": "Sólo en algunas obras",
+    "opcionC": "Solo en algunas obras",
     "opcionD": "Ninguna es correcta",
     "correcta": "B",
     "nivel": 1,
@@ -330,7 +280,7 @@
     "categoria": "Química"
   },
   {
-    "pregunta": "¿Qué gas respiramos los humanos?",
+    "pregunta": "¿Qué gas del aire necesitamos principalmente para respirar?",
     "opcionA": "Dióxido de carbono",
     "opcionB": "Oxígeno",
     "opcionC": "Nitrógeno",
@@ -350,11 +300,11 @@
     "categoria": "Química"
   },
   {
-    "pregunta": "¿Qué elemento tiene el símbolo O?",
+    "pregunta": "¿Qué elemento químico tiene el símbolo O?",
     "opcionA": "Oro",
     "opcionB": "Oxígeno",
     "opcionC": "Plata",
-    "opcionD": "Ósmio",
+    "opcionD": "Osmio",
     "correcta": "B",
     "nivel": 1,
     "categoria": "Química"
@@ -627,7 +577,7 @@
     "opcionD": "Tajo",
     "correcta": "B",
     "nivel": 2,
-    "categoria": "Geografia"
+    "categoria": "Geografía"
   },
   {
     "pregunta": "¿Qué país tiene la mayor cantidad de islas del mundo?",
@@ -637,7 +587,7 @@
     "opcionD": "Japón",
     "correcta": "C",
     "nivel": 2,
-    "categoria": "Geografia"
+    "categoria": "Geografía"
   },
   {
     "pregunta": "¿Cuál es la capital de Canadá?",
@@ -647,7 +597,7 @@
     "opcionD": "Ottawa",
     "correcta": "D",
     "nivel": 2,
-    "categoria": "Geografia"
+    "categoria": "Geografía"
   },
   {
     "pregunta": "¿Cuál es la montaña más alta de América?",
@@ -657,7 +607,7 @@
     "opcionD": "Mont Blanc",
     "correcta": "A",
     "nivel": 2,
-    "categoria": "Geografia"
+    "categoria": "Geografía"
   },
   {
     "pregunta": "¿Qué país atraviesa tanto Europa como Asia?",
@@ -667,7 +617,7 @@
     "opcionD": "Grecia",
     "correcta": "B",
     "nivel": 2,
-    "categoria": "Geografia"
+    "categoria": "Geografía"
   },
   {
     "pregunta": "¿Qué mide un termómetro?",
@@ -840,7 +790,7 @@
     "categoria": "Biología"
   },
   {
-    "pregunta": "¿Dónde ocurre la digestión principalmente?",
+    "pregunta": "¿En qué órgano se mezclan los alimentos con jugos gástricos?",
     "opcionA": "Pulmones",
     "opcionB": "Estómago",
     "opcionC": "Corazón",
@@ -900,16 +850,6 @@
     "categoria": "Química"
   },
   {
-    "pregunta": "¿Qué gas producen las plantas en la fotosíntesis?",
-    "opcionA": "Oxígeno",
-    "opcionB": "Nitrógeno",
-    "opcionC": "CO2",
-    "opcionD": "Helio",
-    "correcta": "A",
-    "nivel": 2,
-    "categoria": "Química"
-  },
-  {
     "pregunta": "¿Cuál es el símbolo del hierro?",
     "opcionA": "Ir",
     "opcionB": "Fe",
@@ -953,7 +893,7 @@
     "pregunta": "¿Qué guerra enfrentó a las colonias americanas contra Gran Bretaña?",
     "opcionA": "Guerra Civil",
     "opcionB": "Guerra Fría",
-    "opcionC": "Guerra de Independencia de EE.UU.",
+    "opcionC": "Guerra de Independencia de EE. UU.",
     "opcionD": "Primera Guerra Mundial",
     "correcta": "C",
     "nivel": 2,
@@ -1170,145 +1110,97 @@
     "categoria": "Deportes"
   },
   {
-    "pregunta": "Cual es el presidente actual Español?",
-    "opcionA": "Pedro Sanchez",
+    "pregunta": "¿Quién es el presidente del Gobierno de España en 2026?",
+    "opcionA": "Pedro Sánchez",
     "opcionB": "Mariano Rajoy",
-    "opcionC": "Zapatero",
+    "opcionC": "José Luis Rodríguez Zapatero",
     "opcionD": "Irene Montero",
     "correcta": "A",
     "nivel": 1,
     "categoria": "General"
   },
   {
-    "pregunta": "Cual es la Cancion mas escuchada de Michael jackson?",
+    "pregunta": "¿Qué canción de Michael Jackson se hizo famosa por su actuación del moonwalk?",
     "opcionA": "Thriller",
     "opcionB": "Billie Jean",
-    "opcionC": "Smoth Criminal",
+    "opcionC": "Smooth Criminal",
     "opcionD": "Beat It",
     "correcta": "B",
     "nivel": 1,
-    "categoria": "Musica"
+    "categoria": "Música"
   },
   {
-    "pregunta": "Cual es la composicion del agua?",
-    "opcionA": "H2o",
-    "opcionB": "H2",
-    "opcionC": "o2",
-    "opcionD": "H2E",
-    "correcta": "A",
-    "nivel": 1,
-    "categoria": "Quimica"
-  },
-  {
-    "pregunta": "Cual es el deporte mas famoso?",
+    "pregunta": "¿Qué deporte suele considerarse el más popular del mundo?",
     "opcionA": "Tenis",
-    "opcionB": "Futbol",
+    "opcionB": "Fútbol",
     "opcionC": "Golf",
-    "opcionD": "Natacion",
+    "opcionD": "Natación",
     "correcta": "B",
     "nivel": 1,
     "categoria": "Deportes"
   },
   {
-    "pregunta": "Quien escribio Don Quijote?",
-    "opcionA": "Lorca",
-    "opcionB": "Cervantes",
-    "opcionC": "Quevedo",
-    "opcionD": "Garcia Marquez",
-    "correcta": "B",
-    "nivel": 1,
-    "categoria": "Literatura"
-  },
-  {
-    "pregunta": "Cual es el rio mas largo del mundo?",
+    "pregunta": "¿Cuál suele considerarse tradicionalmente el río más largo del mundo?",
     "opcionA": "Amazonas",
     "opcionB": "Nilo",
     "opcionC": "Danubio",
     "opcionD": "Misisipi",
     "correcta": "B",
     "nivel": 2,
-    "categoria": "Geografia"
+    "categoria": "Geografía"
   },
   {
-    "pregunta": "Cuando incio la revolocion francesa?",
-    "opcionA": "1788",
-    "opcionB": "1790",
-    "opcionC": "1800",
-    "opcionD": "1789",
-    "correcta": "D",
-    "nivel": 2,
-    "categoria": "Historia"
-  },
-  {
-    "pregunta": "Como se llama el primer ordenador?",
+    "pregunta": "¿Cómo se llamó uno de los primeros ordenadores electrónicos de propósito general?",
     "opcionA": "ENIAC",
-    "opcionB": "Espectrum",
-    "opcionC": "Pc Cuantico",
+    "opcionB": "Spectrum",
+    "opcionC": "PC cuántico",
     "opcionD": "Mac",
     "correcta": "A",
     "nivel": 3,
-    "categoria": "Informatica"
+    "categoria": "Informática"
   },
   {
-    "pregunta": "Cuantos continentes hay?",
+    "pregunta": "¿Cuántos continentes hay según el modelo de 7 continentes?",
     "opcionA": "5",
     "opcionB": "6",
     "opcionC": "7",
     "opcionD": "8",
     "correcta": "C",
     "nivel": 2,
-    "categoria": "Geografia"
+    "categoria": "Geografía"
   },
-
   {
-    "pregunta": "Como se representa el potasio en la tabla periodica?",
+    "pregunta": "¿Cómo se representa el potasio en la tabla periódica?",
     "opcionA": "Ps",
     "opcionB": "K",
     "opcionC": "Pm",
-    "opcionD": "Pk"
-  },
-  {
-    "pregunta": "Que elemento quimico tiene simbolo O?",
-    "opcionA": "Oro",
-    "opcionB": "Oxigeno",
-    "opcionC": "Osmio",
-    "opcionD": "Oxido",
+    "opcionD": "Pk",
     "correcta": "B",
     "nivel": 2,
-    "categoria": "Quimica"
+    "categoria": "Química"
   },
   {
-    "pregunta": "Que tipo de arte dibujaba Da Vinci?",
-    "opcionA": "Naturalista",
-    "opcionB": "Realista",
-    "opcionC": "Minimalista",
-    "opcionD": "Clasico",
+    "pregunta": "¿A qué periodo artístico pertenece Leonardo da Vinci?",
+    "opcionA": "Renacimiento",
+    "opcionB": "Barroco",
+    "opcionC": "Minimalismo",
+    "opcionD": "Arte contemporáneo",
     "correcta": "A",
     "nivel": 2,
     "categoria": "Arte"
   },
   {
-    "pregunta": "Cual es el pais mas poblado?",
+    "pregunta": "¿Cuál es el país más poblado del mundo en 2026?",
     "opcionA": "India",
     "opcionB": "China",
-    "opcionC": "EEUU",
+    "opcionC": "EE. UU.",
     "opcionD": "Brasil",
-    "correcta": "B",
+    "correcta": "A",
     "nivel": 1,
-    "categoria": "Geografia"
+    "categoria": "Geografía"
   },
   {
-    "pregunta": "Que instrumento mide la temperatura?",
-    "opcionA": "Barometro",
-    "opcionB": "Termometro",
-    "opcionC": "Higrometro",
-    "opcionD": "Altimetro",
-    "correcta": "B",
-    "nivel": 1,
-    "categoria": "Física"
-  },
-  {
-    "pregunta": "Cuatos jugadores tiene un equipo de futbol Americano?",
+    "pregunta": "¿Cuántos jugadores tiene un equipo de fútbol americano en el campo?",
     "opcionA": "13",
     "opcionB": "10",
     "opcionC": "11",
@@ -1318,57 +1210,37 @@
     "categoria": "Deportes"
   },
   {
-    "pregunta": "¿Cómo se llama el aguijón que permite acceder al Palacio Blanco en Hollow Knigth?",
-    "opcionA": "Aguijon Onirico",
-    "opcionB": "Aguijon Ancestral",
-    "opcionC": "Aguijon Primordial",
-    "opcionD": "Aguijon Principal",
+    "pregunta": "¿Cómo se llama el aguijón que permite acceder al Palacio Blanco en Hollow Knight?",
+    "opcionA": "Aguijón Onírico Despertado",
+    "opcionB": "Aguijón Ancestral",
+    "opcionC": "Aguijón Primordial",
+    "opcionD": "Aguijón Principal",
     "correcta": "A",
     "nivel": 2,
     "categoria": "Videojuegos"
   },
   {
-    "pregunta": "Cuatos jugadores tiene un equipo de futbol Americano?",
-    "opcionA": "13",
-    "opcionB": "10",
-    "opcionC": "11",
-    "opcionD": "12",
-    "correcta": "C",
-    "nivel": 2,
-    "categoria": "Deportes"
-  },
-  {
-    "pregunta": "Cual fue el el videojuego que popularizo el genero Battle Royale?",
-    "opcionA": "Fornite",
+    "pregunta": "¿Qué videojuego ayudó a popularizar el género battle royale antes del gran auge de Fortnite?",
+    "opcionA": "Fortnite",
     "opcionB": "PUBG",
     "opcionC": "H1Z1",
     "opcionD": "Minecraft Juegos del Hambre",
     "correcta": "B",
     "nivel": 2,
-    "categoria": "Videjuegos"
+    "categoria": "Videojuegos"
   },
   {
-    "pregunta": "Donde esta inspirado el juego de Resident Evil 4?",
+    "pregunta": "¿En qué país se ambienta Resident Evil 4?",
     "opcionA": "España",
     "opcionB": "Italia",
-    "opcionC": "EEUU",
-    "opcionD": "Africa",
+    "opcionC": "EE. UU.",
+    "opcionD": "África",
     "correcta": "A",
     "nivel": 3,
-    "categoria": "Videjuegos"
+    "categoria": "Videojuegos"
   },
   {
-    "pregunta": "Quien formulo la teoria de la relatividad?",
-    "opcionA": "Newton",
-    "opcionB": "Einstein",
-    "opcionC": "Tesla",
-    "opcionD": "Galileo",
-    "correcta": "B",
-    "nivel": 3,
-    "categoria": "Física"
-  },
-  {
-    "pregunta": "Que pais gano el mundial 2010?",
+    "pregunta": "¿Qué país ganó el Mundial de fútbol de 2010?",
     "opcionA": "Brasil",
     "opcionB": "Alemania",
     "opcionC": "España",
@@ -1378,67 +1250,67 @@
     "categoria": "Deportes"
   },
   {
-    "pregunta": "Que lenguaje usa Android principalmente?",
+    "pregunta": "¿Qué lenguaje fue tradicionalmente muy usado para desarrollar aplicaciones Android?",
     "opcionA": "Swift",
     "opcionB": "Java",
     "opcionC": "PHP",
     "opcionD": "Ruby",
     "correcta": "B",
     "nivel": 3,
-    "categoria": "Informatica"
+    "categoria": "Informática"
   },
   {
-    "pregunta": "Quien tiene el record de Tetris Clasico de la NES?",
+    "pregunta": "¿Quién fue el primer jugador conocido en vencer NES Tetris provocando la pantalla de bloqueo?",
     "opcionA": "Joseph Saelee",
     "opcionB": "Willis Gibson",
     "opcionC": "Alex T",
     "opcionD": "Dog",
-    "correcta": "A",
+    "correcta": "B",
     "nivel": 3,
     "categoria": "Videojuegos"
   },
   {
-    "pregunta": "Cual es la montana mas alta del mundo?",
+    "pregunta": "¿Cuál es la montaña más alta del mundo?",
     "opcionA": "K2",
     "opcionB": "Everest",
     "opcionC": "Aneto",
     "opcionD": "Aconcagua",
     "correcta": "B",
     "nivel": 3,
-    "categoria": "Geografia"
+    "categoria": "Geografía"
   },
   {
-    "pregunta": "En que pais se encuentra el Taj Mahal?",
+    "pregunta": "¿En qué país se encuentra el Taj Mahal?",
     "opcionA": "China",
     "opcionB": "India",
-    "opcionC": "Japon",
-    "opcionD": "Turquia",
+    "opcionC": "Japón",
+    "opcionD": "Turquía",
     "correcta": "B",
     "nivel": 3,
     "categoria": "Historia"
   },
   {
-    "pregunta": "Cual es el lenguaje de programacion de paginas dinamicas en servidor?",
+    "pregunta": "¿Qué lenguaje de programación se usa mucho para crear páginas dinámicas en servidor?",
     "opcionA": "HTML",
     "opcionB": "CSS",
     "opcionC": "PHP",
     "opcionD": "XML",
     "correcta": "C",
     "nivel": 3,
-    "categoria": "Informatica"
+    "categoria": "Informática"
   },
   {
-    "pregunta": "Que pais tiene forma de bota?",
+    "pregunta": "¿Qué país tiene forma de bota?",
     "opcionA": "España",
     "opcionB": "Italia",
     "opcionC": "Francia",
     "opcionD": "Grecia",
     "correcta": "B",
     "nivel": 3,
-    "categoria": "Geografia"
+    "categoria": "Geografía"
   },
   {
-    "pregunta": "Quien fue el primer presidente de EEUU?",
+    "pregunta": "¿Quién fue el primer presidente de EE. UU.?",
     "opcionA": "Lincoln",
     "opcionB": "Washington",
     "opcionC": "Jefferson",
@@ -1448,24 +1320,24 @@
     "categoria": "Historia"
   },
   {
-    "pregunta": "¿Qué país tiene frontera con más países en el mundo?",
+    "pregunta": "¿Qué país comparte frontera terrestre con 14 países y tiene capital en Pekín?",
     "opcionA": "China",
     "opcionB": "Rusia",
     "opcionC": "Brasil",
     "opcionD": "India",
     "correcta": "A",
     "nivel": 3,
-    "categoria": "Geografia"
+    "categoria": "Geografía"
   },
   {
-    "pregunta": "¿Cuál es la capital más alta del mundo?",
+    "pregunta": "¿Cuál es la sede de gobierno más alta del mundo?",
     "opcionA": "Quito",
     "opcionB": "La Paz",
     "opcionC": "Bogotá",
     "opcionD": "Katmandú",
     "correcta": "B",
     "nivel": 3,
-    "categoria": "Geografia"
+    "categoria": "Geografía"
   },
   {
     "pregunta": "¿Qué estrecho separa Asia de América?",
@@ -1475,7 +1347,7 @@
     "opcionD": "Ormuz",
     "correcta": "B",
     "nivel": 3,
-    "categoria": "Geografia"
+    "categoria": "Geografía"
   },
   {
     "pregunta": "¿Cuál es el lago más profundo del mundo?",
@@ -1485,7 +1357,7 @@
     "opcionD": "Titicaca",
     "correcta": "C",
     "nivel": 3,
-    "categoria": "Geografia"
+    "categoria": "Geografía"
   },
   {
     "pregunta": "¿Qué país africano tiene más población?",
@@ -1495,7 +1367,7 @@
     "opcionD": "Etiopía",
     "correcta": "C",
     "nivel": 3,
-    "categoria": "Geografia"
+    "categoria": "Geografía"
   },
   {
     "pregunta": "¿Quién formuló las leyes del movimiento?",
@@ -1647,7 +1519,7 @@
     "categoria": "Arte"
   },
   {
-    "pregunta": "¿Qué artista es conocido por las obras “La persistencia de la memoria”?",
+    "pregunta": "¿Qué artista es conocido por la obra “La persistencia de la memoria”?",
     "opcionA": "Dalí",
     "opcionB": "Picasso",
     "opcionC": "Goya",
@@ -1790,11 +1662,11 @@
     "categoria": "Historia"
   },
   {
-    "pregunta": "¿Qué imperio fue gobernado por los faraones?",
-    "opcionA": "Imperio Romano",
-    "opcionB": "Imperio Egipcio",
-    "opcionC": "Imperio Persa",
-    "opcionD": "Imperio Bizantino",
+    "pregunta": "¿Qué civilización fue gobernada por los faraones?",
+    "opcionA": "Romana",
+    "opcionB": "Egipcia",
+    "opcionC": "Persa",
+    "opcionD": "Bizantina",
     "correcta": "B",
     "nivel": 3,
     "pista": "Empieza por E",
@@ -1812,7 +1684,7 @@
     "categoria": "Historia"
   },
   {
-    "pregunta": "¿Qué líder alemán inició la Segunda Guerra Mundial?",
+    "pregunta": "¿Qué líder alemán gobernaba Alemania al inicio de la Segunda Guerra Mundial?",
     "opcionA": "Stalin",
     "opcionB": "Churchill",
     "opcionC": "Hitler",
@@ -1827,7 +1699,7 @@
     "opcionA": "Dante Alighieri",
     "opcionB": "Homero",
     "opcionC": "Virgilio",
-    "opcionD": "Cervantes",
+    "opcionD": "Miguel de Cervantes",
     "correcta": "A",
     "nivel": 3,
     "pista": "Empieza por D",
@@ -1893,7 +1765,7 @@
     "opcionA": "Linux",
     "opcionB": "Windows",
     "opcionC": "Android",
-    "opcionD": "MacOS",
+    "opcionD": "macOS",
     "correcta": "B",
     "nivel": 3,
     "pista": "Empieza por W",
@@ -1988,10 +1860,10 @@
     "categoria": "Música"
   },
   {
-    "pregunta": "¿Cómo se llama el torneo internacional de fútbol más importante?",
+    "pregunta": "¿Cómo se llama el torneo internacional de fútbol de selecciones más importante?",
     "opcionA": "Eurocopa",
     "opcionB": "Champions League",
-    "opcionC": "Mundial",
+    "opcionC": "Mundial de fútbol",
     "opcionD": "Copa América",
     "correcta": "C",
     "nivel": 3,
@@ -2010,7 +1882,7 @@
     "categoria": "Deportes"
   },
   {
-    "pregunta": "¿En qué deporte se usa una red llamada 'cancha' en voleibol?",
+    "pregunta": "¿Qué deporte se juega con seis jugadores por equipo y una red en medio de la cancha?",
     "opcionA": "Baloncesto",
     "opcionB": "Tenis",
     "opcionC": "Voleibol",
