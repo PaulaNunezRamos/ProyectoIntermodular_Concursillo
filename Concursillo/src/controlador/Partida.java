@@ -157,7 +157,6 @@ public class Partida {
 	// ---------------- COMODIN 50:50 ----------------
 
 	public String[] usarComodin5050(ArrayList<String> opcionesYaEliminadas) {
-
 		if (comodin5050Usado || partidaTerminada || preguntaActual == null) {
 			return new String[0];
 		}
@@ -216,28 +215,22 @@ public class Partida {
 		porcentajes[indicesIncorrectos.get(0)] = porcentaje1;
 		porcentajes[indicesIncorrectos.get(1)] = porcentaje2;
 		porcentajes[indicesIncorrectos.get(2)] = porcentaje3;
-
 		return porcentajes;
 	}
 
 	// ---------------- COMODIN LLAMADA ----------------
 
 	public String usarComodinLlamada() {
-
 		if (comodinLlamadaUsado || partidaTerminada || preguntaActual == null) {
 			return "Este comodin ya no esta disponible.";
 		}
-
 		comodinLlamadaUsado = true;
-
 		String respuestaSugerida;
-
 		if (random.nextInt(100) < 70) {
 			respuestaSugerida = preguntaActual.getCorrecta().toUpperCase();
 		} else {
 			respuestaSugerida = obtenerRespuestaIncorrectaAleatoria();
 		}
-
 		return "Tu contacto cree que la respuesta es la " + respuestaSugerida + ": "
 				+ obtenerTextoRespuesta(respuestaSugerida);
 	}
@@ -268,41 +261,30 @@ public class Partida {
 	//No implementado en la interfaz
 
 	public String[] usarComodinRuleta(ArrayList<String> opcionesYaEliminadas) {
-
 		if (comodinRuletaUsado || partidaTerminada || preguntaActual == null) {
 			ultimoNumeroRuleta = -1;
 			return new String[0];
 		}
-
 		comodinRuletaUsado = true;
-
 		// La ruleta puede sacar 0, 1, 2 o 3
 		ultimoNumeroRuleta = random.nextInt(4);
-
 		ArrayList<String> incorrectas = obtenerOpcionesIncorrectas();
-
 		// Quitamos de la lista las opciones que ya estaban eliminadas
 		if (opcionesYaEliminadas != null) {
 			for (String opcion : opcionesYaEliminadas) {
 				incorrectas.remove(opcion);
 			}
 		}
-
 		Collections.shuffle(incorrectas);
-
 		int cantidadEliminar = ultimoNumeroRuleta;
-
 		// Si quedan menos incorrectas disponibles, solo elimina las que pueda
 		if (cantidadEliminar > incorrectas.size()) {
 			cantidadEliminar = incorrectas.size();
 		}
-
 		String[] eliminadas = new String[cantidadEliminar];
-
 		for (int i = 0; i < cantidadEliminar; i++) {
 			eliminadas[i] = incorrectas.get(i);
 		}
-
 		return eliminadas;
 	}
 
@@ -381,6 +363,7 @@ public class Partida {
 	}
 
 	// ---------------- RECUPERAR COMODIN ----------------
+	//No implementado en la interfaz
 
 	private void recuperarComodin(String comodin) {
 		if (comodin.equalsIgnoreCase("5050")) {
@@ -399,7 +382,6 @@ public class Partida {
 	}
 
 	public boolean recuperarComodinElegido(String comodin) {
-
 		if (comodin == null || comodin.equals("")) {
 			return false;
 		}
