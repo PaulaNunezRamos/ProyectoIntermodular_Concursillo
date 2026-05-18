@@ -74,27 +74,27 @@ Durante la partida, el jugador puede utilizar diferentes comodines.
 
 ### 50:50
 
-Elimina dos respuestas incorrectas, dejando visible la respuesta correcta y una opción incorrecta.
+  Elimina dos respuestas incorrectas, dejando visible la respuesta correcta y una opción incorrecta.
 
 ### Comodín del Chat / Público
 
-Simula la ayuda del público o del chat, mostrando una posible respuesta recomendada.
+  Simula la ayuda del público o del chat, mostrando una posible respuesta recomendada.
 
 ### Comodín de la Llamada
 
-Simula una llamada de ayuda, dando una posible pista sobre la respuesta correcta.
+  Simula una llamada de ayuda, dando una posible pista sobre la respuesta correcta.
 
 ### Comodín del Sacrificio (no implementado en la interfaz gráfica)
 
-Comodín especial que permite recibir ayuda a cambio de una consecuencia dentro del juego.
+  Comodín especial que permite recibir ayuda a cambio de una consecuencia dentro del juego.
 
 ### Comodín de la Ruleta (no implementado en la interfaz gráfica)
 
-Lanza una ruleta que puede provocar distintos efectos sobre las respuestas disponibles.
+  Lanza una ruleta que puede provocar distintos efectos sobre las respuestas disponibles.
 
 ### Comodín del Mago (no implementado en la interfaz gráfica)
 
-Permite cambiar la pregunta actual por otra pregunta diferente del mismo nivel o dificultad.
+  Permite cambiar la pregunta actual por otra pregunta diferente del mismo nivel o dificultad.
 
 ---
 
@@ -157,7 +157,6 @@ Cada pregunta almacenada en MongoDB tiene una estructura similar a esta:
   "opcionD": "Sevilla",
   "correcta": "B",
   "nivel": 1,
-  "pista": "Es donde está el gobierno",
   "categoria": "Geografía"
 }
 ```
@@ -173,7 +172,6 @@ Cada pregunta almacenada en MongoDB tiene una estructura similar a esta:
 | `opcionD` | Cuarta respuesta posible |
 | `correcta` | Letra de la respuesta correcta |
 | `nivel` | Nivel de dificultad |
-| `pista` | Ayuda o pista de la pregunta |
 | `categoria` | Categoría temática |
 
 ---
@@ -547,7 +545,6 @@ opcionC
 opcionD
 correcta
 nivel
-pista
 categoria
 ```
 
